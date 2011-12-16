@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{6ACFEB80-DBD8-4835-B62C-497845D68E88}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misq", "Misq", "{E4BA74A5-3359-43B6-A58E-32AD65A63B37}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{E4BA74A5-3359-43B6-A58E-32AD65A63B37}"
 	ProjectSection(SolutionItems) = preProject
 		Document Types.txt = Document Types.txt
-		..\Documentation\Readme.docx = ..\Documentation\Readme.docx
 		TODO.txt = TODO.txt
-		..\doc\www.upac.dk.txt = ..\doc\www.upac.dk.txt
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build, Package and misq Utilities", "Build, Package and misq Utilities", "{04919D26-FA89-4D79-80D0-65FB05FB859E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build, Package and misc Utilities", "Build, Package and misc Utilities", "{04919D26-FA89-4D79-80D0-65FB05FB859E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Under development", "Under development", "{8522C6FE-1A1E-4CD6-8304-FB229BB2B67D}"
 EndProject
