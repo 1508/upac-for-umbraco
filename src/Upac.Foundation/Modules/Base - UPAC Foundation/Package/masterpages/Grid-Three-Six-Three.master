@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/Grid-Twelve-Container.master" AutoEventWireup="true" %>
+<asp:Content ID="Content" ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">
+    <div class="grid-three grid-first">
+        <umbraco:Macro Alias="Navigation-Secondary" runat="server"></umbraco:Macro>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder_Collumn_Left" runat="server" />
+    </div>
+    <div class="grid-six">
+			<div class="content">
+        <h1><umbraco:Item id="headerPageName" field="pageName" runat="server"></umbraco:Item></h1>
+        <umbraco:Macro ID="GlobalPageinfoTop" Alias="Global-Pageinfo-Top" runat="server"></umbraco:Macro>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderDefault" runat="server" />
+        <umbraco:Macro ID="GlobalPageinfoBottom" Alias="Global-Pageinfo-Bottom" runat="server"></umbraco:Macro>
+			</div>
+		</div>
+    <div class="grid-three">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder_Collumn_Right" runat="server" />
+    </div>
+</asp:Content>

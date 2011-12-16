@@ -1,0 +1,102 @@
+﻿<?xml version="1.0"?>
+<project name="Upac-Trac" default="">
+	<property name="Project.File" value="Upac.Trac.csproj" />
+	
+	<property name="MsBuild.Configuration" value="Release" />
+	<property name="nant.settings.currentframework" value="net-3.5" />
+	<property name="MsBuild.exe" value="${framework::get-framework-directory('net-3.5')}/msbuild.exe" />
+
+	<property name="dist.name" value="UpacTrac" />
+	<property name="dist.version" value="1.0.0" />
+
+	<property name="package.name" value="${dist.name}_${dist.version}_${datetime::get-ticks(datetime::now())}" />
+
+	<!-- root of the project -->
+	<property name="root.dir" value="${directory::get-current-directory()}" />
+
+	<!-- Directories storing the public package -->
+	<property name="public.dir" value="${root.dir}\Packages" />
+
+	<property name="package.dir" value="${root.dir}\Temp\Package" />
+
+	<property name="temp.package.dir" value="${root.dir}\Temp\Package" />
+	<property name="temp.zip.dir" value="${root.dir}\Temp\Zips" />
+
+	<target name="RebuildRelease" description="Rebuild and create package">
+		<echo message="Starting process." />
+		<call target="Build.Solution" />
+		<call target="Move.Files" />
+		<call target="Update.Package.Info" />
+		<call target="ZipPackage" />
+		<call target="PublishPackage" />
+		<echo message="Done process." />
+	</target>
+
+	<target name="Build.Solution" description="Build solution using MsBuild">
+		<echo message="Starting Build.Solution target" />
+
+		<!-- Build the solution -->
+		<exec program="${MsBuild.exe}" failonerror="true" basedir="${root.dir}">
+			<!-- If a project file is not specified, MSBuild searches the current working directory for a file name extension that ends in "proj" and uses that file  -->
+			<arg value=""/>
+			<arg value="/noconsolelogger"></arg>
+			<arg value="/t:Rebuild"></arg>
+		</exec>
+	</target>
+
+	<target name="Move.Files" depends="Build.Solution" description="Moves the build files into the right folders and prepares it for packaging">
+
+		<mkdir dir="${temp.package.dir}" />
+		
+		<!-- Dashboard -->
+		<copy todir="${temp.package.dir}" includeemptydirs="true" flatten="false" failonerror="false" overwrite="true">
+			<fileset basedir="${root.dir}">
+				<include name="*.ascx" />
+			</fileset>
+		</copy>
+
+		<!-- DLLS -->
+		<copy todir="${temp.package.dir}" includeemptydirs="true" flatten="false" failonerror="false" overwrite="true">
+			<fileset basedir="${root.dir}\bin">
+				<include name="Upac.Trac.dll" />
+				<include name="Upac.Trac.pdb" />
+			</fileset>
+		</copy>
+
+		<!-- Copy the base package file to the package dir -->
+		<copy file="${root.dir}\package.xml" tofile="${temp.package.dir}\package.xml" failonerror="false" overwrite="true"/>
+	</target>
+	
+	<target name="Update.Package.Info" depends="Move.Files" description="Updates the package info file">
+		<xmlpoke file="${temp.package.dir}\package.xml" xpath="/umbPackage/info/package/version" value="${dist.version}" />
+	</target>
+
+	<target name="ZipPackage" description="Zip the release" depends="Update.Package.Info">
+		<mkdir dir="${temp.zip.dir}" />
+		
+		<!-- Zip everything -->
+		<zip zipfile="${temp.zip.dir}\package.zip" includeemptydirs="true" >
+			<fileset basedir="${temp.package.dir}">
+				<include name="*" />
+			</fileset>
+		</zip>
+
+		<!-- Zip hotfix -->
+		<zip zipfile="${temp.zip.dir}\hotfix.zip" includeemptydirs="true" >
+			<fileset basedir="${temp.package.dir}">
+				<include name="*" />
+				<exclude name="package.xml" />
+			</fileset>
+		</zip>
+
+	</target>
+
+	<target name="PublishPackage" depends="ZipPackage" description="Moves the Zips to a public location">
+		<!-- Move the zip file to the public web directory for sharing with the world -->
+		<mkdir dir="${public.dir}\${dist.version}" />
+
+		<copy file="${temp.zip.dir}\package.zip" tofile="${public.dir}\${dist.version}\${dist.name}_${dist.version}_${datetime::get-ticks(datetime::now())}.zip" />
+		<copy file="${temp.zip.dir}\hotfix.zip" tofile="${public.dir}\${dist.version}\${dist.name}_${dist.version}_${datetime::get-ticks(datetime::now())}_update.zip" />
+	</target>
+	
+</project>

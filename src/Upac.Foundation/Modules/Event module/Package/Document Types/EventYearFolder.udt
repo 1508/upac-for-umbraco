@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+	<Info>
+		<Name>#EventModule-DocumentTypes-EventYearFolder</Name>
+		<Alias>EventYearFolder</Alias>
+		<Icon>folder.png</Icon>
+		<Thumbnail>docWithImage.png</Thumbnail>
+		<Description></Description>
+		<AllowedTemplates />
+		<DefaultTemplate />
+	</Info>
+	<Structure>
+		<DocumentType>EventMonthFolder</DocumentType>
+	</Structure>
+	<GenericProperties />
+	<Tabs />
+</DocumentType>

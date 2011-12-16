@@ -1,0 +1,49 @@
+﻿<?xml version="1.0"?>
+<!-- Targets: RebuildRelease -->
+<project name="Upac.GoogleSiteSearch" default="">
+
+	<!-- Basic settings -->
+	<property name="MsBuild.Configuration" value="Release" />
+	<property name="nant.settings.currentframework" value="net-3.5" />
+
+	<!-- Folders -->
+	<!-- Root dir -->
+	<property name="source.dir" value="${directory::get-current-directory()}" />
+	<property name="release.dir" value="${source.dir}\Releases" />
+
+	<property name="release.upac.GoogleSiteSearch.dir" value="${source.dir}\Releases\Upac.Core" />
+
+	<!-- Apps -->
+	<property name="MsBuild.exe" value="${framework::get-framework-directory('net-3.5')}\msbuild.exe" />
+
+	<!-- Version/Package info -->
+	<property name="dist.name" value="Upac.GoogleSiteSearch" />
+
+	<!-- The temp dir used when creating the zipped packages -->
+
+	<target name="RebuildRelease" description="Rebuild and create package">
+		<echo message="Starting process." />
+		<echo message="Folders" />
+		<echo message="source.dir: ${source.dir}" />
+		<echo message="release.dir: ${release.dir}" />
+		<echo message="release.upac.GoogleSiteSearch.dir: ${release.upac.GoogleSiteSearch.dir}" />
+
+		<call target="Build.Project.Upac.GoogleSiteSearch" />
+
+	</target>
+
+	<target name="Build.Project.Upac.GoogleSiteSearch" description="Build project using MsBuild">
+		<echo message="Starting Build.Project target" />
+
+		<!-- this way we get the newest dll's from Upac.Core into our /bin folder -->
+		<!-- Build the solution -->
+		<exec program="${MsBuild.exe}" failonerror="true" basedir="${source.dir}">
+			<!-- If a project file is not specified, MSBuild searches the current working directory for a file name extension that ends in "proj" and uses that file  -->
+			<arg value="${source.dir}\Upac.GoogleSiteSearch.csproj"/>
+			<arg value="/t:Rebuild"></arg>
+			<arg value="/p:OutputPath=${release.dir}" />
+			<arg value="/p:Configuration=BuildScript" />
+		</exec>
+	</target>
+	
+</project>

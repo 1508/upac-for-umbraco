@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<Macros>
+		<macro>
+			<name>News-DocumentType-NewsModule</name>
+			<alias>News-DocumentType-NewsModule</alias>
+			<scriptType>
+			</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>Modules/News/News-DocumentType-NewsModule.xslt</xslt>
+			<useInEditor>False</useInEditor>
+			<refreshRate>0</refreshRate>
+			<scriptingFile>
+			</scriptingFile>
+			<properties />
+		</macro>
+		<macro>
+			<name>News-List-From-Seleced-Archive</name>
+			<alias>News-List-From-Seleced-Archive</alias>
+			<scriptType>
+			</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>modules/news/News-List-From-Seleced-Archive.xslt</xslt>
+			<useInEditor>False</useInEditor>
+			<refreshRate>0</refreshRate>
+			<properties>
+				<property name="Box headline" alias="title" show="True" propertyType="text" />
+				<property name="Choose news archive" alias="container" show="True" propertyType="contentPicker" />
+				<property name="Total news in list" alias="maxNodesTotal" show="True" propertyType="number" />
+				<property name="News in focus" alias="nodesInFocus" show="True" propertyType="number" />
+				<property name="Link to archive" alias="linkToContainer" show="True" propertyType="bool" />
+				<property name="To archive text" alias="linkToContainerText" show="True" propertyType="text" />
+				<property name="Show RSS link" alias="showRssLink" show="True" propertyType="bool" />
+			</properties>
+		</macro>
+	</Macros>
+</umbPackage>

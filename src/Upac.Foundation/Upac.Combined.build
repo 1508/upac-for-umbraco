@@ -1,0 +1,119 @@
+﻿<?xml version="1.0"?>
+<!-- Targets: CreatePackage -->
+<project name="Upac-Foundation" default="">
+
+	<!-- Basic settings -->
+	<property name="nant.settings.currentframework" value="net-3.5" readonly="true" />
+
+	<!-- Folders -->
+	<property name="build.dir.root" value="${directory::get-current-directory()}" readonly="true" />
+	<property name="release.dir.root" value="${build.dir.root}\Releases" readonly="true"  />
+	<property name="release.dir" value="" />
+	<property name="root.dir" value="${directory::get-parent-directory(build.dir.root)}" readonly="true"  />
+	<property name="source.dir" value="${root.dir}\src" readonly="true"  />
+	<property name="lib.dir" value="${root.dir}\Lib" readonly="true"  />
+	<property name="upac.foundation.dir" value="${source.dir}\Upac.Foundation" readonly="true"  />
+	<property name="upac.core.dir" value="${source.dir}\Upac.Core" readonly="true"  />
+	<property name="modules.dir" value="${upac.foundation.dir}\Modules" />
+
+	<!-- Version/Package info -->
+	<!-- Should be overwrittin in everery build target! -->
+	<property name="dist.name" value="" />
+	<property name="dist.version" value="" />
+	<property name="build.dir" value="" />
+	<property name="local.release.dir" value="" />
+	<property name="module.dir" value="" />
+	<property name="package.name" value="" />
+	<property name="package.dir" value="" />
+
+	<!-- Get build number -->
+	<property name="month" value="${datetime::get-month(datetime::now())}"/>
+	<property name="day" value="${datetime::get-day(datetime::now())}"/>
+	<property name="year" value="${datetime::get-year(datetime::now())}"/>
+	<property name="hour" value="${datetime::get-hour(datetime::now())}"/>
+	<property name="minute" value="${datetime::get-minute(datetime::now())}"/>
+	<property name="second" value="${datetime::get-second(datetime::now())}"/>
+	<property name="dist.build.number" value="build ${day}/${month}-${year} ${hour}:${minute}:${second}"/>
+
+	<target name="CreateCombinedPackage" description="Combine the upac base pakckage with all the modules">
+		<property name="dist.name" value="UPAC Combined package" />
+		<property name="module.dir" value="${modules.dir}\Combined" />
+		<property name="dist.version" value="4.5.0.1" />
+		<!-- The following properties is convetion and should not be altered -->
+		<property name="package.dir" value="${module.dir}\Package" />
+		<property name="build.dir" value="${module.dir}\Build Dir" />
+		<property name="local.release.dir" value="${module.dir}\Release Dir" />
+		<property name="package.name" value="${dist.name}_${dist.version}" />
+		<property name="release.dir" value="${release.dir.root}\${dist.name}" />
+
+		<echo message="Starting ${dist.name} process." />
+		<echo message="source.dir: ${source.dir}" />
+		<echo message="package.name: ${package.name}" />
+		<echo message="Folders" />
+		<echo message="module.dir: ${module.dir}" />
+		<echo message="build.dir: ${build.dir}" />
+		<echo message="package.dir: ${package.dir}" />
+		<echo message="local.release.dir: ${local.release.dir}" />
+		<echo message="release.dir: ${release.dir}" />
+
+		<!-- First deletes the build dir to cleanup. Afterwards creates the build dir -->
+		<delete dir="${build.dir}" />
+		<mkdir dir="${build.dir}" />
+
+		<!-- Ensure.Local.ReleaseDir -->
+		<mkdir dir="${local.release.dir}" />
+
+		<!-- Start with UPAC Foundation  -->
+		<copy todir="${build.dir}\" includeemptydirs="false">
+			<fileset basedir="${modules.dir}\Base - UPAC Foundation\Build Dir">
+				<include name="**/*" />
+			</fileset>
+		</copy>
+
+		<!-- News Module -->
+		<copy todir="${build.dir}\" includeemptydirs="false">
+			<fileset basedir="${modules.dir}\News module\Build Dir">
+				<include name="**/*" />
+				<exclude name="package.xml" />
+			</fileset>
+		</copy>
+		<echo message="Merge News Module package files" />
+		<mergeumbracopackagedefinitionfiles sourcefile="${modules.dir}\News module\Build Dir\package.xml" targetfile="${build.dir}\package.xml" />
+
+		<!-- Publication Module -->
+		<copy todir="${build.dir}\" includeemptydirs="false">
+			<fileset basedir="${modules.dir}\Publication module\Build Dir">
+				<include name="**/*" />
+				<exclude name="package.xml" />
+			</fileset>
+		</copy>
+		<echo message="Merge Publication Module package files" />
+		<mergeumbracopackagedefinitionfiles sourcefile="${modules.dir}\Publication module\Build Dir\package.xml" targetfile="${build.dir}\package.xml" />
+
+		<!-- Event Module -->
+		<copy todir="${build.dir}\" includeemptydirs="false">
+			<fileset basedir="${modules.dir}\Event module\Build Dir">
+				<include name="**/*" />
+				<exclude name="package.xml" />
+			</fileset>
+		</copy>
+		<echo message="Merge Event Module package files" />
+		<mergeumbracopackagedefinitionfiles sourcefile="${modules.dir}\Event module\Build Dir\package.xml" targetfile="${build.dir}\package.xml" />
+
+		<call target="Release.Package" />
+
+		<echo message="Done ${dist.name} process." />
+
+	</target>
+
+	<target name="Release.Package" description="Releases the package">
+		<zip zipfile="${local.release.dir}\${package.name}.zip" includeemptydirs="true" >
+			<fileset basedir="${build.dir}">
+				<include name="*" />
+				<include name="**/*" />
+			</fileset>
+		</zip>
+		<copy file="${local.release.dir}\${package.name}.zip" tofile="${release.dir}\${package.name}.zip" overwrite="true"/>
+	</target>
+
+</project>

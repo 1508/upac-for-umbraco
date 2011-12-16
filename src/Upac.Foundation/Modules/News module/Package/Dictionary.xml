@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<DictionaryItems>
+		<DictionaryItem Key="NewsModule">
+			<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[]]></Value>
+			<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[]]></Value>
+			<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[]]></Value>
+			<DictionaryItem Key="NewsModule-Umbraco">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[]]></Value>
+				<DictionaryItem Key="NewsModule-DocumentTypes-NewsYearFolder">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Year folder]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Års mappe]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Year folder]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="NewsModule-DocumentTypes-NewsMonthFolder">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Month folder]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Måneds mappe]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Month folder]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="NewsModule-DocumentTypes-NewsModule">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[News module]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Nyheds modul]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[News module]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="NewsModule-DocumentTypes-NewsDocument">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[News document]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Nyhed]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[News document]]></Value>
+				</DictionaryItem>
+			</DictionaryItem>
+		</DictionaryItem>
+	</DictionaryItems>
+</umbPackage>

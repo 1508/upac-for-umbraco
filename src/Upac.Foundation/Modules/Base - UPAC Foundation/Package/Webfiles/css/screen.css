@@ -1,0 +1,817 @@
+﻿@import url('reset.css');
+@import url('typography.css');
+@import url('forms.css');
+
+/* GENERAL 
+----------------------------------------------------------------------------------------------------*/
+
+html
+{
+	height: auto;
+	min-height: 100%;
+	overflow-y: scroll;
+}
+
+body
+{
+	font-family: Arial, sans-serif;
+	color: #282828;
+	color: rgba(0,0,0,.7); /*CSS3*/
+	font-size: 62.5%;
+	background: #bbb;
+	line-height: 1.6em;
+	padding-top:15px;
+}
+
+.primarynavigation ul, .secondarynavigation ul, .breadcrumb ul, .tools ul, .servicenav ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* TYPOGRAPHY 
+----------------------------------------------------------------------------------------------------*/
+
+.top
+{
+	font-size: 1.1em;
+}
+.main
+{
+	font-size: 1.2em;
+}
+.bottom
+{
+	font-size: 1.2em;
+}
+.main-content
+{
+	position: relative;
+}
+.frontpage .main .grid-three .box
+{
+	height: 223px;
+	overflow: hidden;
+}
+
+
+h3, p.page-info, .head3
+{
+	font-size: 0.916em; /*11px*/
+	font-weight: 100;
+	text-transform: uppercase;
+}
+p.page-info
+{
+	margin: 13px 0 0;
+	border-top: 1px solid #d9e2ec;
+	border-bottom: 1px solid #d9e2ec;
+	padding: 8px 0;
+}
+
+
+#bottom ul li a, .contentbox ul li a
+{
+	padding-left: 13px;
+	background-repeat: no-repeat;
+	display: block;
+	color: #00354C;
+}
+
+
+
+
+.date
+{
+	float: right;
+}
+
+
+/* FLOATS AND CLEARS
+----------------------------------------------------------------------------------------------------*/
+.left
+{
+	float: left;
+}
+.right
+{
+	float: right;
+}
+.clear
+{
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+.cl
+{
+	clear: left;
+}
+.cr
+{
+	clear: right;
+}
+
+
+/* ACCESSIBILITY
+----------------------------------------------------------------------------------------------------*/
+.accessibility
+{
+	position: absolute;
+	top: -999em;
+	left: -999em;
+	color: #999;
+}
+
+
+/* CLEARFIX
+----------------------------------------------------------------------------------------------------*/
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+.clearfix:after
+{
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix
+{
+	display: inline-block;
+}
+* html .clearfix
+{
+	height: 1%;
+}
+.clearfix
+{
+	display: block;
+}
+
+
+/* GRIDS
+----------------------------------------------------------------------------------------------------*/
+#wrap.wrap
+{
+	width: 968px;
+	margin: 0 auto 30px auto;
+	padding: 0 40px 20px;
+	background: #fff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 5px rgba(0,0,0,.25);
+	box-shadow: 0 3px 5px rgba(0,0,0,.25);
+	z-index: 0;
+}
+
+.main
+{
+	margin: 0 auto;
+	min-height: 465px;
+	position: relative;
+	text-align: left;
+	width: auto;
+}
+
+.bottom
+{
+	width: auto;
+}
+
+
+.grid-one, .grid-two, .grid-three, .grid-four, .grid-five, .grid-six, .grid-seven, .grid-eight, .grid-nine, .grid-ten, .grid-eleven
+{
+	margin-left: 10px;
+}
+
+.grid-one, .grid-two, .grid-three, .grid-four, .grid-five, .grid-six, .grid-seven, .grid-eight, .grid-nine, .grid-ten, .grid-eleven, .grid-twelve
+{
+	display: inline;
+	float: left;
+	position: relative;
+	margin-right: 0;
+}
+
+.grid-one
+{
+	width: 66px;
+}
+.grid-two
+{
+	width: 148px;
+}
+.grid-three
+{
+	width: 230px;
+}
+.grid-four
+{
+	width: 312px;
+}
+.grid-five
+{
+	width: 394px;
+}
+.grid-six
+{
+	width: 476px;
+}
+.grid-seven
+{
+	width: 558px;
+}
+.grid-eight
+{
+	width: 640px;
+}
+.grid-nine
+{
+	width: 722px;
+}
+.grid-ten
+{
+	width: 804px;
+}
+.grid-eleven
+{
+	width: 886px;
+}
+
+
+.grid-twelve
+{
+	width: 100%;
+	clear: both;
+}
+
+.grid-first
+{
+	margin-left: 0;
+	clear: left;
+}
+
+/* TOP 
+----------------------------------------------------------------------------------------------------*/
+#top.top
+{
+	z-index: 2;
+}
+
+#top .logo
+{
+	position: relative;
+	float: left;
+	width: 78px;
+	height: 78px;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+#top .logo a:hover img
+{
+	top: -78px;
+	position: relative;
+}
+
+#top .logo span
+{
+	left: -999em;
+	position: absolute;
+	top: -999em;
+}
+
+/* SEARCH
+----------------------------------------------------------------------------------------------------*/
+#top .search
+{
+	float: right;
+	clear: right;
+	margin-top: 10px;
+	width: 190px;
+}
+
+#top .search fieldset
+{
+	float: right;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+#top .search legend
+{
+	display: none;
+}
+
+#top .search input.txt
+{
+	float: left;
+	height: 20px;
+}
+
+#top .search input.btn
+{
+	font-size: 1.1em;
+	background: url("../gfx/sprite.png") no-repeat 0 -3px;
+	border: medium none;
+	cursor: pointer;
+	float: left;
+	height: 25px;
+	margin: 0.5em 0 0 11px;
+	position: relative;
+	width: 25px;
+}
+
+/* SERVICENAV 
+----------------------------------------------------------------------------------------------------*/
+.servicenav
+{
+	float: right;
+	margin-top: 15px;
+}
+
+.servicenav ul
+{
+	border: 0 none;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	float: right;
+}
+
+.servicenav ul li
+{
+	float: left;
+	margin-right: 15px;
+}
+
+.servicenav ul li a.active
+{
+	color: #595959;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.servicenav ul li a
+{
+	position: relative;
+}
+
+/* PRIMARY NAVIGATION
+----------------------------------------------------------------------------------------------------*/
+.primarynavigation
+{
+	float: left;
+	text-transform: uppercase;
+	margin-top: 27px;
+}
+
+.primarynavigation ul
+{
+	float: left;
+}
+
+.primarynavigation ul li
+{
+	margin-right: 10px;
+	float: left;
+}
+.primarynavigation ul li a
+{
+	display: block;
+	padding: 5px 0;
+	font-size: .95em;
+	line-height: 1;
+	text-decoration: none;
+	font-weight: bold;
+	border: none;
+	color: #939393;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+.primarynavigation ul li a:hover, .primarynavigation ul li.open a, .primarynavigation ul li a:focus
+{
+	color: #4c4d4d;
+}
+
+
+/* BREADCRUMB 
+----------------------------------------------------------------------------------------------------*/
+
+.breadcrumb
+{
+	float: left;
+}
+.breadcrumb span
+{
+	float: left;
+	margin-right: 3px;
+}
+.breadcrumb ul
+{
+	float: left;
+}
+.breadcrumb ul li
+{
+	float: left;
+	margin-right: 5px;
+}
+.breadcrumb ul li a
+{
+}
+.breadcrumb ul li a.active
+{
+	background: none;
+}
+
+/* BREADCRUMB 
+----------------------------------------------------------------------------------------------------*/
+
+.breadcrumb
+{
+	font-size: 1em;
+	margin: 7px 0 0;
+	padding: 0 0 5px 5px;
+	font-style: italic;
+	color: #636363;
+	min-height: 41px;
+}
+.breadcrumb span
+{
+	float: left;
+	margin-right: 3px;
+}
+.breadcrumb ul
+{
+	float: left;
+}
+.breadcrumb li
+{
+	float: left;
+	list-style: none;
+}
+
+.breadcrumb a
+{
+	color: #636363;
+}
+
+.breadcrumb a:hover
+{
+	color: #F46F22;
+	text-decoration: none;
+}
+
+/* TOOLS 
+----------------------------------------------------------------------------------------------------*/
+.tools
+{
+	float: right;
+	margin-top: 10px;
+	width: 96px;
+}
+
+.tools ul
+{
+	float: left;
+}
+
+.tools ul li
+{
+	float: left;
+	list-style: none;
+	margin-left: 8px;
+}
+
+.tools ul li a
+{
+	float: left;
+	text-decoration: none;
+	background-image: url(../gfx/sprite.png);
+	background-repeat: no-repeat;
+	height: 24px;
+	width: 24px;
+}
+
+.tools ul li a.print
+{
+	background-position: -33px -33px;
+}
+
+.tools ul li a.print:hover
+{
+	background-position: -63px -63px;
+}
+
+.tools ul li a.read
+{
+	background-position: -152px -153px;
+}
+
+.tools ul li a.read:hover
+{
+	background-position: -182px -183px;
+}
+
+.tools ul li a.share
+{
+	background-position: -93px -93px;
+}
+
+.tools ul li a.share:hover
+{
+	background-position: -123px -124px;
+}
+
+.tools ul li a:active, .tools ul li a:focus, .tools ul li a:hover
+{
+	text-decoration: none;
+}
+
+/* SECONDAY NAVIGATION
+----------------------------------------------------------------------------------------------------*/
+
+.secondarynavigation
+{
+	font-size: 1em;
+	line-height: normal;
+	width: 100%;
+}
+
+.secondarynavigation li
+{
+	text-transform: uppercase;
+}
+
+.secondarynavigation li a
+{
+	border-bottom: 1px solid #CCCCCC;
+	color: #000;
+	font-weight: 700;
+	text-decoration: none;
+	display: block;
+	padding: 4px 10px;
+	background-color: #EEE;
+}
+
+.secondarynavigation li a:hover
+{
+	background-color: #AAA;
+	color: #333;
+}
+
+.secondarynavigation li a.active
+{
+	color: #FFF;
+	background-color: #666;
+}
+
+.secondarynavigation li a.active:hover
+{
+	color: #FFF;
+	background-color: #555;
+}
+
+.secondarynavigation li a.navigationlevel-0
+{
+	border: medium none;
+	color: #FFFFFF;
+	padding: 6px 12px;
+	background: #333;
+}
+
+.secondarynavigation li a.navigationlevel-0:hover
+{
+	background: #111;
+}
+
+.secondarynavigation .navigationlevel-1
+{
+	color: #000;
+	background-color: #BBB;
+}
+
+.secondarynavigation ul ul ul a
+{
+	padding-left: 30px;
+}
+
+.secondarynavigation ul ul ul ul a
+{
+	padding-left: 50px;
+}
+
+.secondarynavigation ul ul ul ul ul a
+{
+	padding-left: 70px;
+}
+
+.secondarynavigation .open-parent
+{
+	background-color: #333;
+	color: #FFF;
+}
+
+.secondarynavigation .open-parent:hover
+{
+	background-color: #000;
+	color: #FFF;
+}
+
+/* CONTENT
+----------------------------------------------------------------------------------------------------*/
+.content
+{
+	background-color: #fff;
+}
+
+
+/* BOTTOM
+----------------------------------------------------------------------------------------------------*/
+
+#bottom.bottom
+{
+	position: relative;
+	width: auto;
+	font-size: 1.2em;
+	margin-top: 50px;
+	text-align: center;
+}
+#bottom .footer-top .grid-content
+{
+	background: none;
+	padding: 8px 28px 0;
+}
+#bottom .footer-bottom .grid-content
+{
+	background: none;
+	padding: 8px 0 0 37px;
+}
+#bottom .box
+{
+	background: none;
+}
+#bottom .shadow-bottom
+{
+	padding-top: 0;
+}
+#bottom .grid-two
+{
+	padding-top: 2px;
+}
+.footer-top
+{
+	padding-top: 8px;
+	position: relative;
+}
+
+
+#bottom ul li a
+{
+	font-size: 0.9166em;
+	position: relative;
+	line-height: 1.8em;
+}
+
+#bottom .number
+{
+	display: block;
+	font-size: 3em;
+	margin-right: 7px;
+	padding-top: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#bottom .number-text
+{
+	display: block;
+	font-size: 0.9166em;
+	line-height: 1.364em;
+	padding-top: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#bottom .address
+{
+	display: block;
+	font-size: 0.9166em;
+	line-height: 1.364em;
+	text-transform: uppercase;
+	margin: 3px 0 11px;
+}
+
+#bottom h3
+{
+	margin-bottom: 5px;
+}
+#bottom .to-top
+{
+	float: right;
+	margin: 3px 0 11px;
+	padding-left: 12px;
+}
+
+/* ADDTHIS */
+.addthis_button_print span
+{
+	display: none;
+}
+
+
+/* `Safari and Google Chrome CSS
+----------------------------------------------------------------------------------------------------*/
+@media screen and (-webkit-min-device-pixel-ratio:0)
+{
+	/*skriv din CSS her*/
+}
+
+
+
+/* NEWSMODULE / EVENTMODULE / PUBLICATION
+----------------------------------------------------------------------------------------------------*/
+.yearlist
+{
+	padding-bottom: 10px;
+	list-style: none;
+	padding-left: 0;
+}
+
+
+.yearlist li
+{
+	float: left;
+	font-size: 1.166em;
+	list-style-type: none;
+	margin-right: 10px;
+}
+.yearlist a
+{
+	text-decoration: none;
+}
+
+.event ul
+{
+	list-style: none;
+	padding: 0;
+}
+.event li
+{
+	clear: both;
+	margin-bottom: 10px;
+}
+.event img
+{
+	float: left;
+	margin: 0 10px 21px 0;
+}
+.event-monthname
+{
+	border-bottom: 1px dotted #A8A8A8;
+	border-top: 3px solid #000000;
+	height: 22px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	text-transform: capitalize;
+}
+.event ul a
+{
+	border-left: 6px solid #F46F22;
+	border-right: 6px solid #F46F22;
+	clear: both;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	margin: 10px 10px 0 0;
+	padding: 0 10px;
+	text-decoration: none;
+}
+.event ul a:hover
+{
+	text-decoration: none;
+}
+.event li span
+{
+	color: #636363;
+	font-size: 12px;
+	display: block;
+}
+.endlink
+{
+	font-size: 12px;
+	margin-bottom: 10px;
+	padding-top: 0;
+}
+
+.event-module span
+{
+	font-weight:700;
+}

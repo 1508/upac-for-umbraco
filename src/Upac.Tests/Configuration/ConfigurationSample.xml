@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Configuration.xsd">
+	<DefaultSettings>
+		<NodeNames>
+			<FooterNavigation>FooterNavigation</FooterNavigation>
+			<DefaultValues>DefaultValues</DefaultValues>
+			<RichtextEditorSettings>RichtextEditorSettings</RichtextEditorSettings>
+			<RichtextEditorSettingsProfiles>RichtextEditorSettingsProfiles</RichtextEditorSettingsProfiles>
+			<ServicePages>ServicePages</ServicePages>
+			<SiteConfig>SiteConfig</SiteConfig>
+			<SiteSettings>SiteSettings</SiteSettings>
+		</NodeNames>
+		<PropertyAliases>
+			<HideFromNavigation>HideFromNavigation</HideFromNavigation>
+			<HideFromSitemap>HideFromSitemap</HideFromSitemap>
+			<SitemapTitle>SitemapTitle</SitemapTitle>
+			<Date>Date</Date>
+			<DateFormatShort>DateFormatShort</DateFormatShort>
+			<DateFormatLong>DateFormatLong</DateFormatLong>
+		</PropertyAliases>
+		<AppSettings>
+			<SetWidthOnRichTextEditorViaTemplateAlias>true</SetWidthOnRichTextEditorViaTemplateAlias>
+		</AppSettings>
+		<UmbracoEvents>
+			<Event Enabled="true" Name="Document.New">
+				<Handler Enabled="true" Method="SetDateOnNew" Type="Upac.Core.Events.SetDate, FemtenNulOtte.Upac.Core"/>
+				<Handler Enabled="true" Method="SetDefaultValuesOnNew" Type="Upac.Core.Events.SetDefaultValues, FemtenNulOtte.Upac.Core"/>
+			</Event>
+		</UmbracoEvents>
+	</DefaultSettings>
+</Configuration>

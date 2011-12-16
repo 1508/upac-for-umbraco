@@ -1,0 +1,166 @@
+﻿<?xml version="1.0"?>
+<!--
+Targets:
+
+RebuildRelease
+
+
+-->
+<project name="Upac-Foundation" default="">
+
+	<!-- Basic settings -->
+	<property name="MsBuild.Configuration" value="Release" />
+	<property name="nant.settings.currentframework" value="net-3.5" />
+
+	<!-- Folders -->
+	<!-- Root dir -->
+	<property name="build.dir" value="${directory::get-current-directory()}" />
+	<property name="release.dir" value="${build.dir}\Releases\Upac.Membership" />
+	<property name="root.dir" value="${directory::get-parent-directory(build.dir)}" />
+	<property name="source.dir" value="${root.dir}\Source" />
+	<property name="lib.dir" value="${root.dir}\Lib" />
+	<property name="upac.membership.dir" value="${source.dir}\Upac.Membership" />
+	<property name="temp.dir" value="${build.dir}\Temp" />
+
+	<!-- Apps -->
+	<property name="MsBuild.exe" value="${framework::get-framework-directory('net-3.5')}\msbuild.exe" />
+	<property name="AddFilesToUmbracoPackage.app" value="${lib.dir}\Upac\Upac.AddFilesToUmbracoPackage.exe" />
+
+	<!-- Version/Package info -->
+	<property name="dist.name" value="Upac.Membership" />
+	<property name="dist.version" value="1" />
+
+	<!-- Misq -->
+	<property name="package.name" value="${dist.name}_${dist.version}" />
+
+	<!-- The temp dir used when creating the zipped packages -->
+
+	<target name="RebuildRelease" description="Rebuild and create package">
+		<echo message="Starting process." />
+		<echo message="Folders" />
+		<echo message="root.dir: ${root.dir}" />
+		<echo message="build.dir: ${build.dir}" />
+		<echo message="release.dir: ${release.dir}" />
+		<echo message="temp.dir: ${temp.dir}" />
+		<echo message="source.dir: ${source.dir}" />
+		<echo message="lib.dir: ${lib.dir}" />
+		<echo message="upac.membership.dir: ${upac.membership.dir}" />
+		<echo message="Apps" />
+		<echo message="AddFilesToUmbracoPackage.app: ${AddFilesToUmbracoPackage.app}" />
+
+
+		<call target="Clean.Up.TempDir" />
+		<call target="Prepare.TempDir" />
+
+		<call target="Build.Project.Upac.Membership" />
+
+		<call target="Add.Project.Upac.Membership.Installer" />
+
+		<call target="Create.Package.Xml.File" />
+
+		<call target="Update.Package.Webfiles" />
+
+		<call target="Release.Hotfix.Package" />
+
+		<call target="Release.DllHotfix.Package" />
+
+		<call target="AddFilesTo.Umbraco.Package" />
+
+		<call target="Release.Package" />
+		
+	</target>
+
+	<target name="Prepare.TempDir" descripton="Creates bin folder" >
+		<mkdir dir="${temp.dir}/bin" />
+	</target>
+
+	<target name="Clean.Up.TempDir" descripton="First deletes the temp dir to cleanup. Afterwards creates the temp dir" >
+		<delete dir="${temp.dir}" />
+		<mkdir dir="${temp.dir}" />
+	</target>
+
+	<target name="Build.Project.Upac.Membership" description="Build project using MsBuild">
+		<echo message="Starting Build.Project target" />
+
+		<!-- this way we get the newest dll's from Upac.Core into our /bin folder -->
+		<!-- Build the solution -->
+		<exec program="${MsBuild.exe}" failonerror="true" basedir="${upac.membership.dir}">
+			<!-- If a project file is not specified, MSBuild searches the current working directory for a file name extension that ends in "proj" and uses that file  -->
+			<arg value="${upac.membership.dir}\Upac.Membership.csproj"/>
+			<arg value="/noconsolelogger"></arg>
+			<arg value="/t:Rebuild"></arg>
+			<arg value="/p:OutputPath=${temp.dir}/bin/TempBuildDir" />
+			<arg value="/p:Configuration=Release" />
+		</exec>
+
+		<copy todir="${temp.dir}/bin">
+			<fileset basedir="${temp.dir}/bin/TempBuildDir">
+				<include name="Upac.Membership.*" />
+			</fileset>
+		</copy>
+
+		<delete dir="${temp.dir}/bin/TempBuildDir" />
+		
+	</target>
+
+	<target name="Add.Project.Upac.Membership.Installer">
+		<copy file="${upac.membership.dir}\Installer\UserControl\MembershipInstaller.ascx" tofile="${temp.dir}\usercontrols\Upac\Membership\MembershipInstaller.ascx" overwrite="true"/>
+	</target>
+
+	<target name="Create.Package.Xml.File" descripton="Creates the package xml file" >
+		<copy file="${upac.membership.dir}\UpacMembershipPackage.xml" tofile="${temp.dir}\package.xml" overwrite="true"/>
+		<xmlpoke file="${temp.dir}\package.xml" xpath="/umbPackage/info/package/version" value="${dist.version}" />
+	</target>
+
+	<target name="Update.Package.Webfiles" descripton="">
+		<copy todir="${temp.dir}\usercontrols\Upac\Membership\" includeemptydirs="false">
+			<fileset basedir="${upac.membership.dir}\usercontrols\upac\Membership">
+				<include name="*.ascx" />
+			</fileset>
+		</copy>
+		<copy todir="${temp.dir}upac/membership/" includeemptydirs="false">
+			<fileset basedir="${upac.membership.dir}\upac\membership">
+				<include name="*.xslt" />
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="AddFilesTo.Umbraco.Package" description="">
+		<!-- here we will append files in the package directory to the package file-->
+		<!-- args: manifest, folder with files in correct structure, folder to send to for zipping-->
+		<exec program="${AddFilesToUmbracoPackage.app}">
+			<arg value="${temp.dir}\package.xml" />
+		</exec>
+	</target>
+
+	<target name="Release.Package" description="Releases the package">
+		<zip zipfile="${release.dir}\${package.name}.zip" includeemptydirs="true" >
+			<fileset basedir="${temp.dir}">
+				<include name="*" />
+				<include name="**/*" />
+			</fileset>
+		</zip>
+	</target>
+
+	<target name="Release.Hotfix.Package">
+		<zip zipfile="${release.dir}\${package.name}_hotfix.zip" includeemptydirs="true" >
+			<fileset basedir="${temp.dir}">
+				<include name="*" />
+				<include name="**/*" />
+				<exclude name="package.xml" />
+			</fileset>
+		</zip>
+	</target>
+
+	<target name="Release.DllHotfix.Package">
+		<zip zipfile="${release.dir}\${package.name}_hotfix_only_dll.zip" includeemptydirs="true" >
+			<fileset basedir="${temp.dir}\bin">
+				<include name="Upac.Membership.dll" />
+				<include name="Upac.Membership.pdb" />
+			</fileset>
+		</zip>
+		
+	</target>
+	
+	
+</project>

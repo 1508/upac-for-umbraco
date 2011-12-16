@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>MacroPicker.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>MacroPicker.dll</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>MacroPicker</name>
+      <version>1.1</version>
+      <license url="http://www.opensource.org/licenses/mit-license.php">MIT License</license>
+      <url>http://macropicker.codeplex.com/</url>
+      <requirements>
+        <major>3</major>
+        <minor>0</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Soeteman Software and Design Revolution</name>
+      <website>http://www.soetemansoftware.nl/</website>
+    </author>
+    <readme><![CDATA[With Macropicker, macro's can easily be selected while editing content without the need of a rich text editor and properties can easily be filled in by the content manager.
+]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes>
+    <DataType Name="Macro Picker" Id="2b4a6034-7063-47b0-9c4b-08bf1f23b3e2" Definition="9400aa04-6efc-40b5-ac9f-20573c90b1a7">
+			<PreValues>
+				<PreValue Id="7" Value="upac-oemed" />
+			</PreValues>
+    </DataType>
+  </DataTypes>
+</umbPackage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+	<Info>
+		<Name>#PublicationModule-DocumentTypes-PublicationMonthFolder</Name>
+		<Alias>PublicationMonthFolder</Alias>
+		<Icon>book.png</Icon>
+		<Thumbnail>docWithImage.png</Thumbnail>
+		<Description></Description>
+		<AllowedTemplates />
+		<DefaultTemplate />
+	</Info>
+	<Structure>
+		<DocumentType>PublicationDocument</DocumentType>
+	</Structure>
+	<GenericProperties />
+	<Tabs />
+</DocumentType>

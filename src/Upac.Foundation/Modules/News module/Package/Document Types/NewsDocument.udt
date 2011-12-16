@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+	<Info>
+		<Name>#NewsModule-DocumentTypes-NewsDocument</Name>
+		<Alias>NewsDocument</Alias>
+		<Icon>newspaper.png</Icon>
+		<Thumbnail>docWithImage.png</Thumbnail>
+		<Description></Description>
+		<AllowedTemplates>
+			<Template>Document-Normal</Template>
+		</AllowedTemplates>
+		<DefaultTemplate>Document-Normal</DefaultTemplate>
+	</Info>
+	<Structure>
+	</Structure>
+	<GenericProperties>
+		<Include src="../../../Base - UPAC Foundation/Package/Document Types/Base.txt" xpath="/DocumentType/GenericProperties/GenericProperty" />
+	</GenericProperties>
+	<Tabs>
+		<Include src="../../../Base - UPAC Foundation/Package/Document Types/Base.txt" xpath="/DocumentType/Tabs/Tab" />
+	</Tabs>
+</DocumentType>

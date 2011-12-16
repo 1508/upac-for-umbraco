@@ -1,0 +1,367 @@
+﻿<?xml version="1.0"?>
+<!-- Targets: CreatePackage -->
+<project name="Upac-Foundation" default="">
+
+	<!-- Basic settings -->
+	<property name="nant.settings.currentframework" value="net-3.5" readonly="true" />
+
+	<!-- Folders -->
+	<property name="build.dir.root" value="${directory::get-current-directory()}" readonly="true" />
+	<property name="release.dir.root" value="${build.dir.root}\Releases" readonly="true"  />
+	<property name="release.dir" value="" />
+	<property name="root.dir" value="${directory::get-parent-directory(build.dir.root)}" readonly="true"  />
+	<property name="source.dir" value="${root.dir}\src" readonly="true"  />
+	<property name="lib.dir" value="${root.dir}\src\lib" readonly="true"  />
+	<property name="upac.foundation.dir" value="${source.dir}\Upac.Foundation" readonly="true"  />
+	<property name="upac.core.dir" value="${source.dir}\Upac.Core" readonly="true"  />
+	<property name="modules.dir" value="${upac.foundation.dir}\Modules" />
+
+	<!-- Apps -->
+	<property name="MsBuild.exe" value="${framework::get-framework-directory('net-3.5')}\msbuild.exe" />
+	<property name="AddFilesToUmbracoPackage.app" value="${lib.dir}\Upac\Upac.AddFilesToUmbracoPackage.exe" />
+	<property name="FixDocumentIds.app" value="${lib.dir}\Upac\Upac.ConsoleUtilities.FixDocumentIds.exe" />
+
+	<!-- Version/Package info -->
+	<!-- Should be overwrittin in everery build target! -->
+	<property name="dist.name" value="" />
+	<property name="dist.version" value="" />
+	<property name="build.dir" value="" />
+	<property name="local.release.dir" value="" />
+	<property name="module.dir" value="" />
+	<property name="package.name" value="" />
+	<property name="package.dir" value="" />
+
+	<!-- Get build number -->
+	<property name="month" value="${datetime::get-month(datetime::now())}"/>
+	<property name="day" value="${datetime::get-day(datetime::now())}"/>
+	<property name="year" value="${datetime::get-year(datetime::now())}"/>
+	<property name="hour" value="${datetime::get-hour(datetime::now())}"/>
+	<property name="minute" value="${datetime::get-minute(datetime::now())}"/>
+	<property name="second" value="${datetime::get-second(datetime::now())}"/>
+	<property name="dist.build.number" value="build ${day}/${month}-${year} ${hour}:${minute}:${second}"/>
+
+	<target name="CreateBasePackage" description="Rebuild and create a UPAC base package">
+		<property name="dist.name" value="UPAC.Foundation" />
+		<property name="module.dir" value="${modules.dir}\Base - UPAC Foundation" />
+		<property name="dist.version" value="4.5.0.1" />
+		<!-- The following properties is convetion and should not be altered -->
+		<property name="package.dir" value="${module.dir}\Package" />
+		<property name="build.dir" value="${module.dir}\Build Dir" />
+		<property name="local.release.dir" value="${module.dir}\Release Dir" />
+		<property name="package.name" value="${dist.name}_${dist.version}" />
+		<property name="release.dir" value="${release.dir.root}\${dist.name}" />
+
+		<echo message="Starting ${dist.name} process." />
+		<echo message="source.dir: ${source.dir}" />
+		<echo message="package.name: ${package.name}" />
+		<echo message="Folders" />
+		<echo message="module.dir: ${module.dir}" />
+		<echo message="build.dir: ${build.dir}" />
+		<echo message="package.dir: ${package.dir}" />
+		<echo message="local.release.dir: ${local.release.dir}" />
+		<echo message="release.dir: ${release.dir}" />
+
+		<call target="Clean.Up.BuildDir" />
+		<mkdir dir="${build.dir}/bin" />
+		<call target="Ensure.Local.ReleaseDir" />
+		<call target="Create.Package.Xml.File" />
+		<call target="Insert.Package.DocumentTypes" />
+		<call target="Insert.Package.Webfiles" />
+		<call target="Insert.Dictionary" />
+		<call target="Insert.Macros" />
+		<call target="Insert.Templates" />
+		<call target="Insert.Documents" />
+
+		<!-- Module specifiq things start -->
+
+		<!-- Build the UPAC.CORE solution -->
+		<!-- this way we get the newest dll's from Upac.Core into our /bin folder -->
+		<exec program="${MsBuild.exe}" failonerror="true" basedir="${source.dir}\Upac.Core">
+			<!-- If a project file is not specified, MSBuild searches the current working directory for a file name extension that ends in "proj" and uses that file  -->
+			<arg value="${upac.core.dir}\Upac.Core.csproj"/>
+			<arg value="/noconsolelogger"></arg>
+			<arg value="/t:Rebuild"></arg>
+			<arg value="/p:OutputPath=${build.dir}/bin" />
+			<arg value="/p:Configuration=Release" />
+		</exec>
+
+		<!-- Build the UPAC.EVENTS solution -->
+		<!-- this way we get the newest dll's from Upac.Events into our /bin folder -->
+		<exec program="${MsBuild.exe}" failonerror="true" basedir="${source.dir}\Upac.Events">
+			<arg value="${source.dir}\Upac.Events\Upac.Events.csproj"/>
+			<arg value="/noconsolelogger"></arg>
+			<arg value="/t:Rebuild"></arg>
+			<arg value="/p:OutputPath=${build.dir}/bin" />
+			<arg value="/p:Configuration=Release" />
+		</exec>
+
+		<!-- Add ImageGen -->
+		<copy file="${module.dir}\Third Party\ImageGen\2.2.1.38932\ImageGen2.2.1.38932\ImageGen.dll" tofile="${build.dir}\bin\ImageGen.dll" overwrite="true"/>
+		<copy file="${module.dir}\Third Party\ImageGen\2.2.1.38932\ImageGen2.2.1.38932\ImageGen.ashx" tofile="${build.dir}\umbraco\ImageGen.ashx" overwrite="true"/>
+		<!-- Add Macropicker -->
+		<copy file="${module.dir}\Third Party\Macropicker\1.1\MacroPicker_1[1].1\256692c8-d586-4c7d-8b46-fef4a8116838\MacroPicker.dll" tofile="${build.dir}\bin\MacroPicker.dll" overwrite="true"/>
+		<appendxml sourcefile="${module.dir}\Third Party\Macropicker\1.1\MacroPicker_1[1].1\256692c8-d586-4c7d-8b46-fef4a8116838\package.xml" sourcexpath="/umbPackage/DataTypes/DataType" targetfile="${build.dir}\package.xml" targetxpath="/umbPackage/DataTypes"  />
+		<!-- Add NVelocity Dependency -->
+		<copy todir="${build.dir}\bin">
+			<fileset basedir="${lib.dir}/NVelocity">
+				<include name="NVelocity.*" />
+			</fileset>
+		</copy>
+		<!-- Add log4net Dependency -->
+		<copy todir="${build.dir}\bin">
+			<fileset basedir="${lib.dir}/log4net">
+				<include name="log4net.*" />
+			</fileset>
+		</copy>
+
+		<!-- Module specifiq things end -->
+
+		<call target="AddFilesTo.Umbraco.Package" />
+		<call target="Release.Package" />
+
+		<echo message="Done ${dist.name} process." />
+	</target>
+
+	<target name="CreateEventModulePackage" description="Rebuild and create a UPAC Event Module package">
+		<property name="dist.name" value="UPAC.EventModule" />
+		<property name="module.dir" value="${modules.dir}\Event module" />
+		<property name="dist.version" value="4.5.0.1" />
+		<!-- The following properties is convetion and should not be altered -->
+		<property name="package.dir" value="${module.dir}\Package" />
+		<property name="build.dir" value="${module.dir}\Build Dir" />
+		<property name="local.release.dir" value="${module.dir}\Release Dir" />
+		<property name="package.name" value="${dist.name}_${dist.version}" />
+		<property name="release.dir" value="${release.dir.root}\${dist.name}" />
+
+		<echo message="Starting ${dist.name} process." />
+		<echo message="source.dir: ${source.dir}" />
+		<echo message="package.name: ${package.name}" />
+		<echo message="Folders" />
+		<echo message="module.dir: ${module.dir}" />
+		<echo message="build.dir: ${build.dir}" />
+		<echo message="package.dir: ${package.dir}" />
+		<echo message="local.release.dir: ${local.release.dir}" />
+		<echo message="release.dir: ${release.dir}" />
+
+		<call target="Clean.Up.BuildDir" />
+		<!--<mkdir dir="${build.dir}/bin" />-->
+		<call target="Ensure.Local.ReleaseDir" />
+		<call target="Create.Package.Xml.File" />
+		<call target="Insert.Package.DocumentTypes" />
+		<call target="Insert.Package.Webfiles" />
+		<call target="Insert.Dictionary" />
+		<call target="Insert.Macros" />
+		<call target="Insert.Templates" />
+		<call target="Insert.Documents" />
+
+		<!-- Module specifiq things start -->
+
+		<!-- Module specifiq things end -->
+
+		<call target="AddFilesTo.Umbraco.Package" />
+		<call target="Release.Package" />
+
+		<echo message="Done ${dist.name} process." />
+	</target>
+
+	<target name="CreateNewsModulePackage" description="Rebuild and create a UPAC News Module package">
+		<property name="dist.name" value="UPAC.NewsModule" />
+		<property name="module.dir" value="${modules.dir}\News module" />
+		<property name="dist.version" value="4.5.0.1" />
+		<!-- The following properties is convetion and should not be altered -->
+		<property name="package.dir" value="${module.dir}\Package" />
+		<property name="build.dir" value="${module.dir}\Build Dir" />
+		<property name="local.release.dir" value="${module.dir}\Release Dir" />
+		<property name="package.name" value="${dist.name}_${dist.version}" />
+		<property name="release.dir" value="${release.dir.root}\${dist.name}" />
+
+		<echo message="Starting ${dist.name} process." />
+		<echo message="source.dir: ${source.dir}" />
+		<echo message="package.name: ${package.name}" />
+		<echo message="Folders" />
+		<echo message="module.dir: ${module.dir}" />
+		<echo message="build.dir: ${build.dir}" />
+		<echo message="package.dir: ${package.dir}" />
+		<echo message="local.release.dir: ${local.release.dir}" />
+		<echo message="release.dir: ${release.dir}" />
+
+		<call target="Clean.Up.BuildDir" />
+		<!--<mkdir dir="${build.dir}/bin" />-->
+		<call target="Ensure.Local.ReleaseDir" />
+		<call target="Create.Package.Xml.File" />
+		<call target="Insert.Package.DocumentTypes" />
+		<call target="Insert.Package.Webfiles" />
+		<call target="Insert.Dictionary" />
+		<call target="Insert.Macros" />
+		<call target="Insert.Templates" />
+		<call target="Insert.Documents" />
+
+		<!-- Module specifiq things start -->
+
+		<!-- Module specifiq things end -->
+
+		<call target="AddFilesTo.Umbraco.Package" />
+		<call target="Release.Package" />
+
+		<echo message="Done ${dist.name} process." />
+	</target>
+
+	<target name="CreatePublicationModulePackage" description="Rebuild and create a UPAC Publication Module package">
+		<property name="dist.name" value="UPAC.PublicationModule" />
+		<property name="module.dir" value="${modules.dir}\Publication module" />
+		<property name="dist.version" value="4.5.0.1" />
+		<!-- The following properties is convetion and should not be altered -->
+		<property name="package.dir" value="${module.dir}\Package" />
+		<property name="build.dir" value="${module.dir}\Build Dir" />
+		<property name="local.release.dir" value="${module.dir}\Release Dir" />
+		<property name="package.name" value="${dist.name}_${dist.version}" />
+		<property name="release.dir" value="${release.dir.root}\${dist.name}" />
+
+		<echo message="Starting ${dist.name} process." />
+		<echo message="source.dir: ${source.dir}" />
+		<echo message="package.name: ${package.name}" />
+		<echo message="Folders" />
+		<echo message="module.dir: ${module.dir}" />
+		<echo message="build.dir: ${build.dir}" />
+		<echo message="package.dir: ${package.dir}" />
+		<echo message="local.release.dir: ${local.release.dir}" />
+		<echo message="release.dir: ${release.dir}" />
+
+		<call target="Clean.Up.BuildDir" />
+		<!--<mkdir dir="${build.dir}/bin" />-->
+		<call target="Ensure.Local.ReleaseDir" />
+		<call target="Create.Package.Xml.File" />
+		<call target="Insert.Package.DocumentTypes" />
+		<call target="Insert.Package.Webfiles" />
+		<call target="Insert.Dictionary" />
+		<call target="Insert.Macros" />
+		<call target="Insert.Templates" />
+		<call target="Insert.Documents" />
+
+		<!-- Module specifiq things start -->
+
+		<!-- Module specifiq things end -->
+
+		<call target="AddFilesTo.Umbraco.Package" />
+		<call target="Release.Package" />
+
+		<echo message="Done ${dist.name} process." />
+	</target>
+
+
+	<target name="Clean.Up.BuildDir" descripton="First deletes the build dir to cleanup. Afterwards creates the build dir" >
+		<delete dir="${build.dir}" />
+		<mkdir dir="${build.dir}" />
+	</target>
+
+	<target name="Ensure.Local.ReleaseDir" descripton="Creates the release dir if it's not exists">
+		<mkdir dir="${local.release.dir}" />
+	</target>
+
+
+	<target name="Create.Package.Xml.File" descripton="Creates the package xml file" >
+		<copy file="${package.dir}\package.xml" tofile="${build.dir}\package.xml" overwrite="true"/>
+		<xmlpoke file="${build.dir}\package.xml" xpath="/umbPackage/info/package/version" value="${dist.version} (${dist.build.number})" />
+	</target>
+
+	<target name="Insert.Package.Webfiles" descripton="">
+		<copy todir="${build.dir}\" includeemptydirs="false">
+			<fileset basedir="${package.dir}\Webfiles">
+				<include name="**/*" />
+				<exclude name="masterpages/*" />
+				<!--
+				<exclude name="css/*.css" />
+				-->
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="AddFilesTo.Umbraco.Package" description="">
+		<!-- here we will append files in the package directory to the package file-->
+		<!-- args: manifest, folder with files in correct structure, folder to send to for zipping-->
+		<exec program="${AddFilesToUmbracoPackage.app}">
+			<arg value="${build.dir}\package.xml" />
+			<arg value="0" />
+			<!-- do not use guids for filenames -->
+		</exec>
+	</target>
+
+	<!-- Copy the document types files which are stored as xml (*.udt) into the package.xml file.  -->
+	<target name="Insert.Package.DocumentTypes" description="">
+		<property name="xmlnodes" value=""/>
+
+		<foreach item="File" property="filename">
+			<in>
+				<items basedir="${package.dir}/Document Types">
+					<include name="*.udt" />
+					<exclude name="*.txt" />
+				</items>
+			</in>
+			<do>
+				<if test="${path::get-extension(filename) == '.udt'}">
+					<echo>Is a UDT file</echo>
+					<!--<xmlpeek file="${filename}" xpath="/DocumentType" property="documenttype" />-->
+					<parsexmlincludes file="${filename}" xpath="/DocumentType" property="documenttype" />
+					<property name="newnode" value="&lt;DocumentType&gt;${documenttype}&lt;/DocumentType&gt;" />
+					<property name="xmlnodes" value="${xmlnodes}${newnode}" />
+				</if>
+			</do>
+		</foreach>
+
+		<!-- Appends all the document types -->
+		<xmlpoke file="${build.dir}\package.xml" xpath="/umbPackage/DocumentTypes" value="${xmlnodes}" />
+	</target>
+
+	<target name="Insert.Dictionary" description="">
+		<appendxml sourcefile="${package.dir}/Dictionary.xml" sourcexpath="/umbPackage/DictionaryItems/DictionaryItem" targetfile="${build.dir}\package.xml" targetxpath="/umbPackage/DictionaryItems"  />
+	</target>
+
+	<target name="Update.Package.Documents" description="">
+		<xmlpeek file="${upac.foundation.dir}/PackageFiles/Documents/DocumentPackage.xml" xpath="/umbPackage/Documents/DocumentSet" property="DocumentSet" />
+		<property name="newnode" value="&lt;DocumentSet importMode=&quot;root&quot;&gt;${DocumentSet}&lt;/DocumentSet&gt;" />
+		<xmlpoke file="${build.dir}\package.xml" xpath="/umbPackage/Documents" value="${newnode}" />
+		<exec program="${FixDocumentIds.app}">
+			<arg value="${build.dir}\package.xml" />
+		</exec>
+	</target>
+
+	<target name="Insert.Macros" description="">
+		<appendxml sourcefile="${package.dir}/Macros.xml" sourcexpath="/umbPackage/Macros/macro" targetfile="${build.dir}\package.xml" targetxpath="/umbPackage/Macros"  />
+	</target>
+
+	<target name="Insert.Documents" descripton="">
+		<appendxml sourcefile="${package.dir}/Documents.xml" sourcexpath="/umbPackage/Documents/DocumentSet/node" targetfile="${build.dir}\package.xml" targetxpath="/umbPackage/Documents/DocumentSet"  />
+		<exec program="${FixDocumentIds.app}">
+			<arg value="${build.dir}\package.xml" />
+		</exec>
+	</target>
+
+	<target name="Insert.Templates" descripton="" >
+		<appendxml sourcefile="${package.dir}/Templates.xml" sourcexpath="/umbPackage/Templates/Template" targetfile="${build.dir}\package.xml" targetxpath="/umbPackage/Templates"  />
+		<xmllist file="${package.dir}\Templates.xml" property="templates" delim="," xpath="/umbPackage/Templates/Template/Alias" />
+		<foreach item="String" in="${templates}" delim="," property="templateAlias">
+			<loadfile file="${package.dir}/masterpages/${templateAlias}.master" property="master.filecontent" />
+			<xmlpoke file="${build.dir}\package.xml" xpath="/umbPackage/Templates/Template [Alias = '${templateAlias}']/Design" value="&lt;![CDATA[${master.filecontent}]]&gt;" />
+		</foreach>
+	</target>
+
+
+	<target name="Update.Package.StyleSheets" description="">
+		<xmllist file="${upac.foundation.dir}\BasePackage.xml" property="stylesheets" delim="," xpath="/umbPackage/Stylesheets/Stylesheet/Name" />
+		<foreach item="String" in="${stylesheets}" delim="," property="stylesheetAlias">
+			<loadfile file="${upac.foundation.dir}\PackageFiles\Webfiles\css\${stylesheetAlias}.css" property="css.filecontent" />
+			<xmlpoke file="${build.dir}\package.xml" xpath="/umbPackage/Stylesheets/Stylesheet[Name = '${stylesheetAlias}']/Content" value="&lt;![CDATA[${css.filecontent}]]&gt;" />
+		</foreach>
+	</target>
+
+	<target name="Release.Package" description="Releases the package">
+		<zip zipfile="${local.release.dir}\${package.name}.zip" includeemptydirs="true" >
+			<fileset basedir="${build.dir}">
+				<include name="*" />
+				<include name="**/*" />
+			</fileset>
+		</zip>
+		<copy file="${local.release.dir}\${package.name}.zip" tofile="${release.dir}\${package.name}.zip" overwrite="true"/>
+	</target>
+
+</project>

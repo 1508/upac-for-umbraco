@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<node id="1178" version="ee803db6-b286-4d62-9778-93943459dee9" parentID="1085" level="3" writerID="0" creatorID="0" nodeType="1065" template="0" sortOrder="6" createDate="2010-03-24T13:08:47" updateDate="2010-04-06T10:36:09" nodeName="Bruger" urlName="bruger" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Folder - Navigation" path="-1,1084,1085,1178">
+	<node id="1180" version="af7e72ed-57fe-4041-b91f-d73c0cdcad79" parentID="1178" level="4" writerID="0" creatorID="0" nodeType="1064" template="1049" sortOrder="1" createDate="2010-03-24T13:09:26" updateDate="2010-04-06T10:36:09" nodeName="Login" urlName="login" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Document" path="-1,1084,1085,1178,1180">
+		<data alias="ShortIntro"><![CDATA[]]></data>
+		<data alias="Body">
+			<![CDATA[
+<p><?UMBRACO_MACRO macroAlias="Upac.Membership.Login"
+/></p>
+
+<p>&nbsp;</p>
+
+<br />
+<br />
+]]>
+		</data>
+		<data alias="BrowserTitle" />
+		<data alias="Date">1900-01-01T00:00:00</data>
+		<data alias="ShowToTop">1</data>
+		<data alias="ShowPageInfo">1</data>
+		<data alias="Image" />
+		<data alias="NavigationTitle" />
+		<data alias="HideFromNavigation">1</data>
+		<data alias="HideFromSitemap">1</data>
+		<data alias="SitemapTitle" />
+		<data alias="MetaDescription" />
+		<data alias="MetaKeywords" />
+		<data alias="MetaNoIndex">1</data>
+		<data alias="MetaNoIndexOnDescendents">0</data>
+		<data alias="umbracoUrlAlias" />
+	</node>
+	<node id="1181" version="56f905d0-1706-4503-ae29-4bfe3bd25f4d" parentID="1178" level="4" writerID="0" creatorID="0" nodeType="1064" template="1049" sortOrder="2" createDate="2010-03-24T13:09:34" updateDate="2010-04-06T10:36:09" nodeName="Logout" urlName="logout" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Document" path="-1,1084,1085,1178,1181">
+		<data alias="ShortIntro"><![CDATA[Du er nu logget ud]]></data>
+		<data alias="Body">
+			<![CDATA[
+<p><?UMBRACO_MACRO redirectbacktopage="1"
+macroAlias="Upac.Membership.Logout" /></p>
+]]>
+		</data>
+		<data alias="BrowserTitle" />
+		<data alias="Date">1900-01-01T00:00:00</data>
+		<data alias="ShowToTop">1</data>
+		<data alias="ShowPageInfo">1</data>
+		<data alias="Image" />
+		<data alias="NavigationTitle" />
+		<data alias="HideFromNavigation">1</data>
+		<data alias="HideFromSitemap">1</data>
+		<data alias="SitemapTitle" />
+		<data alias="MetaDescription" />
+		<data alias="MetaKeywords" />
+		<data alias="MetaNoIndex">1</data>
+		<data alias="MetaNoIndexOnDescendents">0</data>
+		<data alias="umbracoUrlAlias" />
+	</node>
+	<node id="1182" version="ed9e4218-47ca-4a1c-a5d2-1a52cd6db325" parentID="1178" level="4" writerID="0" creatorID="0" nodeType="1064" template="1049" sortOrder="3" createDate="2010-03-24T13:10:06" updateDate="2010-04-06T10:36:09" nodeName="Permission Error" urlName="permission-error" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Document" path="-1,1084,1085,1178,1182">
+		<data alias="ShortIntro"><![CDATA[Du har ikke rettigheder nok]]></data>
+		<data alias="Body"><![CDATA[]]></data>
+		<data alias="BrowserTitle" />
+		<data alias="Date">1900-01-01T00:00:00</data>
+		<data alias="ShowToTop">1</data>
+		<data alias="ShowPageInfo">1</data>
+		<data alias="Image" />
+		<data alias="NavigationTitle" />
+		<data alias="HideFromNavigation">1</data>
+		<data alias="HideFromSitemap">1</data>
+		<data alias="SitemapTitle" />
+		<data alias="MetaDescription" />
+		<data alias="MetaKeywords" />
+		<data alias="MetaNoIndex">1</data>
+		<data alias="MetaNoIndexOnDescendents">0</data>
+		<data alias="umbracoUrlAlias" />
+	</node>
+	<node id="1183" version="155088c3-9d2a-483e-ae33-cdc98f6eed75" parentID="1178" level="4" writerID="0" creatorID="0" nodeType="1064" template="1049" sortOrder="4" createDate="2010-03-24T13:10:22" updateDate="2010-04-07T13:00:35" nodeName="Opret bruger" urlName="opret-bruger" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Document" path="-1,1084,1085,1178,1183">
+		<data alias="ShortIntro"><![CDATA[]]></data>
+		<data alias="Body">
+			<![CDATA[
+<p><?UMBRACO_MACRO macroAlias="Upac.Membership.Create"
+/></p>
+
+<p>&nbsp;</p>
+
+<br />
+<br />
+]]>
+		</data>
+		<data alias="BrowserTitle" />
+		<data alias="Date">1900-01-01T00:00:00</data>
+		<data alias="ShowToTop">1</data>
+		<data alias="ShowPageInfo">1</data>
+		<data alias="Image" />
+		<data alias="NavigationTitle" />
+		<data alias="HideFromNavigation">1</data>
+		<data alias="HideFromSitemap">1</data>
+		<data alias="SitemapTitle" />
+		<data alias="MetaDescription" />
+		<data alias="MetaKeywords" />
+		<data alias="MetaNoIndex">0</data>
+		<data alias="MetaNoIndexOnDescendents">0</data>
+		<data alias="umbracoUrlAlias" />
+	</node>
+	<node id="1195" version="0c1d20e4-3251-4953-9e99-261b9e524c8a" parentID="1178" level="4" writerID="0" creatorID="0" nodeType="1064" template="1049" sortOrder="5" createDate="2010-03-24T14:05:17" updateDate="2010-04-06T15:11:57" nodeName="Din profil" urlName="din-profil" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Document" path="-1,1084,1085,1178,1195">
+		<data alias="ShortIntro"><![CDATA[]]></data>
+		<data alias="Body">
+			<![CDATA[
+<p><?UMBRACO_MACRO macroAlias="Upac.Membership.YourProfile"
+/></p>
+]]>
+		</data>
+		<data alias="BrowserTitle" />
+		<data alias="Date">1900-01-01T00:00:00</data>
+		<data alias="ShowToTop">1</data>
+		<data alias="ShowPageInfo">1</data>
+		<data alias="Image" />
+		<data alias="NavigationTitle" />
+		<data alias="HideFromNavigation">1</data>
+		<data alias="HideFromSitemap">1</data>
+		<data alias="SitemapTitle" />
+		<data alias="MetaDescription" />
+		<data alias="MetaKeywords" />
+		<data alias="MetaNoIndex">1</data>
+		<data alias="MetaNoIndexOnDescendents">0</data>
+		<data alias="umbracoUrlAlias" />
+	</node>
+	<node id="1250" version="9e3b3e11-92ad-4304-b3fb-46976cb06bca" parentID="1178" level="4" writerID="0" creatorID="0" nodeType="1064" template="1049" sortOrder="6" createDate="2010-03-30T09:56:58" updateDate="2010-04-06T10:36:09" nodeName="Glemt login" urlName="glemt-login" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Document" path="-1,1084,1085,1178,1250">
+		<data alias="ShortIntro"><![CDATA[]]></data>
+		<data alias="Body">
+			<![CDATA[
+<p><?UMBRACO_MACRO
+macroAlias="Upac.Membership.PasswordRecovery" /></p>
+]]>
+		</data>
+		<data alias="BrowserTitle" />
+		<data alias="Date">1900-01-01T00:00:00</data>
+		<data alias="ShowToTop">1</data>
+		<data alias="ShowPageInfo">1</data>
+		<data alias="Image" />
+		<data alias="NavigationTitle" />
+		<data alias="HideFromNavigation">0</data>
+		<data alias="HideFromSitemap">0</data>
+		<data alias="SitemapTitle" />
+		<data alias="MetaDescription" />
+		<data alias="MetaKeywords" />
+		<data alias="MetaNoIndex">0</data>
+		<data alias="MetaNoIndexOnDescendents">0</data>
+		<data alias="umbracoUrlAlias" />
+	</node>
+	<node id="1278" version="64d94c4f-899f-4994-bd6c-a2f2ceb0bcc6" parentID="1178" level="4" writerID="0" creatorID="0" nodeType="1064" template="1049" sortOrder="7" createDate="2010-03-31T09:55:06" updateDate="2010-04-06T10:36:09" nodeName="Aktivering" urlName="aktivering" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Document" path="-1,1084,1085,1178,1278">
+		<data alias="ShortIntro"><![CDATA[]]></data>
+		<data alias="Body">
+			<![CDATA[
+<p><?UMBRACO_MACRO macroAlias="Upac.Membership.Activate"
+/></p>
+]]>
+		</data>
+		<data alias="BrowserTitle" />
+		<data alias="Date">2010-03-31T13:00:00</data>
+		<data alias="ShowToTop">0</data>
+		<data alias="ShowPageInfo">0</data>
+		<data alias="Image" />
+		<data alias="NavigationTitle" />
+		<data alias="HideFromNavigation">1</data>
+		<data alias="HideFromSitemap">1</data>
+		<data alias="SitemapTitle" />
+		<data alias="MetaDescription" />
+		<data alias="MetaKeywords" />
+		<data alias="MetaNoIndex">1</data>
+		<data alias="MetaNoIndexOnDescendents">0</data>
+		<data alias="umbracoUrlAlias">activate/user</data>
+	</node>
+</node>

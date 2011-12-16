@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<files>
+		<file>
+			<guid>Upac.Trac.dll</guid>
+			<orgPath>/bin</orgPath>
+			<orgName>Upac.Trac.dll</orgName>
+		</file>
+		<file>
+			<guid>Upac.Trac.pdb</guid>
+			<orgPath>/bin</orgPath>
+			<orgName>Upac.Trac.pdb</orgName>
+		</file>
+		<file>
+			<guid>TracDashboard.ascx</guid>
+			<orgPath>/usercontrols</orgPath>
+			<orgName>TracDashboard.ascx</orgName>
+		</file>
+	</files>
+	<info>
+		<package>
+			<name>TracDashboard</name>
+			<version>1.0</version>
+			<license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+			<url>http://www.1508.dk/</url>
+			<requirements>
+				<major>3</major>
+				<minor>0</minor>
+				<patch>0</patch>
+			</requirements>
+		</package>
+		<author>
+			<name>Christian Palm, 1508 A/S</name>
+			<website>http://www.1508.dk/</website>
+		</author>
+		<readme><![CDATA[Dashboard control to create track tickets]]></readme>
+	</info>
+	<DocumentTypes />
+	<Templates />
+	<Stylesheets />
+	<Macros />
+	<DictionaryItems />
+	<Languages />
+	<DataTypes />
+	<Actions>
+		<Action runat="install" undo="true" alias="addDashboardSection" dashboardAlias="TracDashboard">
+			<section>
+				<areas>
+					<area>developer</area>
+				</areas>
+				<tab caption="Create trac ticket">
+					<control>/usercontrols/TracDashboard.ascx</control>
+				</tab>
+			</section>
+		</Action>
+	</Actions>
+</umbPackage>

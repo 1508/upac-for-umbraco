@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <Templates>
+	<Template>
+	  <Name>Publication-DocumentType-PublicationDocument</Name>
+	  <Alias>Publication-DocumentType-PublicationDocument</Alias>
+	  <Master>Grid-Three-Six-Three</Master>
+	  <Design></Design>
+	</Template>
+  </Templates>
+</umbPackage>

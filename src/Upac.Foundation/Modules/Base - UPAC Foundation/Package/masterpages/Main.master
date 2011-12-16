@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+
+<%@ Register TagPrefix="UPAC" Assembly="Upac.Core" Namespace="Upac.Core.Webcontrols" %>
+
+<script language="C#" runat="server">
+	private void Page_Init(object sender, EventArgs e)
+	{
+		base.DataBind();
+	}
+</script>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">
+	<!doctype html public "-//w3c//dtd xhtml 1.1//en" "http://www.w3.org/tr/xhtml11/dtd/xhtml11.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<umbraco:Macro Alias="Global-Head-Title" runat="server"></umbraco:Macro>
+			<umbraco:Macro Alias="Global-Head-Meta" runat="server"></umbraco:Macro>
+			<umbraco:Macro Alias="Modules-Rss-Head-Meta" runat="server"></umbraco:Macro>
+			<link rel="canonical" href="<%# Upac.Core.LinkManager.GetNodeUrl(Upac.Core.UpacContext.Current.Node)  %>" />
+			<link rel="shortcut icon" type="image/x-icon" href="/gfx/favicon.ico" />
+			<link rel="stylesheet" type="text/css" href="/css/screen.css" />
+			<link href="/css/print.css" type="text/css" media="print" rel="stylesheet" />
+            <link rel="stylesheet" type="text/css" href="/scripts/jquery-lightbox-0.5/css/jquery.lightbox-0.5.css" media="screen" />
+			<umbraco:Macro ID="GlobalHeadEndInclude" Alias="Global-Head-End-Include" runat="server"></umbraco:Macro>
+		</head>
+		<body>
+			<form id="mainform" method="post" runat="server">
+				<div id="skipnavigation" class="accessibility">
+					<hr />
+					<p>
+						<strong>
+							<umbraco:Item Field="#Accessibility-SkipNavigation" runat="server"></umbraco:Item>
+						</strong>
+					</p>
+					<ul>
+						<li><a href="#content">
+						<umbraco:Item Field="#Accessibility-SkipNavigation" runat="server"></umbraco:Item>
+						</a></li>
+					</ul>
+				</div>
+				<div id="wrap" class="wrap">
+					<div id="top" class="top clearfix">
+						<div class="grid-twelve">
+							<umbraco:Macro ID="GlobalLogo" Alias="Global-Logo" runat="server"></umbraco:Macro>
+							<umbraco:Macro ID="Macro1" includeFrontpage="1" Alias="Navigation-Service" runat="server"></umbraco:Macro>
+							<umbraco:Macro ID="Macro2" Alias="Global-Search" runat="server"></umbraco:Macro>
+							<umbraco:Macro ID="Macro3" Alias="Navigation-Primary" runat="server"></umbraco:Macro>
+						</div>
+					</div>
+					<div id="main" class="main clearfix">
+						<asp:contentplaceholder id="ContentPlaceHolderDefault" runat="server" />
+					</div>
+					<div id="bottom" class="bottom clearfix">
+						<umbraco:Macro ID="GlobalFooter" Alias="Global-Footer" runat="server"></umbraco:Macro>
+					</div>
+				</div>
+			</form>
+
+			<script type="text/javascript" src="/scripts/jquery-1.4.2.min.js"></script>
+
+			<script type="text/javascript" src="/scripts/script.js"></script>
+
+			<umbraco:Macro ID="ModulesAddThis" Alias="Modules-Add-This" runat="server"></umbraco:Macro>
+			<umbraco:Macro ID="ModulesGoogleAnalytics" Alias="Modules-Google-Analytics" runat="server"></umbraco:Macro>
+			<umbraco:Macro ID="GlobalBodyEndInclude" Alias="Global-Body-End-Include" runat="server"></umbraco:Macro>
+		</body>
+	</html>
+</asp:Content>

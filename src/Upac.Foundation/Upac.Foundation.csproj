@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B578FA5C-B86F-427D-8583-A90DB18B4A7E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Upac.Foundation.v2</RootNamespace>
+    <AssemblyName>Upac.Foundation.v2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\ConfigurationFooter.udt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\AreaDocument.udt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Documents.xml" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Dictionary.xml" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\Base Document Type.udt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\Base.txt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\ConfigurationContainer.udt">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\ConfigurationGoogle.udt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\ConfigurationDefaultValuesContainer.udt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\ConfigurationAddThis.udt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\ConfigurationDateTime.udt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\ConfigurationRSS.udt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\ConfigurationEmail.udt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\ConfigurationSearchEngineOptimization.udt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\FolderNavigationService.udt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\Redirect.udt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\Frontpage.udt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Document Types\Document.udt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Macros.xml" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\package.xml" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Templates.xml" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\css\forms.css" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\css\print.css" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\css\reset.css" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\css\screen.css" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\css\typography.css" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\gfx\favicon.ico" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\gfx\logo.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\gfx\sprite.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\scripts\script.js" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\scripts\jquery-1.4.2.min.js" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\accept.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\application.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\application_cascade.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\attach.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\basket.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\basket_go.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\bell.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\bin.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\book.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\book_addresses.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\book_go.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\book_link.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\book_open.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\box.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\brick.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\brick_link.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\bug.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\building.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\calculator.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\calendar.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\calendar_link.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\calendar_view_day.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\calendar_view_month.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\calendar_view_week.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\camera.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\camera_link.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\camera_small.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\car.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\cart.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\cd.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\chart_bar.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\chart_curve.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\chart_line.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\chart_organisation.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\chart_pie.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\chart_pie_link.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\clock.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\clock_red.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\cog.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\cog_edit.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\cog_error.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\cog_go.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\coins.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\color_swatch.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\color_wheel.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\comment.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\comments.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\comment_edit.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\compress.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\computer.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\connect.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\controller.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\cross.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\cup.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\cursor.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\cut.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\database.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\date.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\disconnect.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\door.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\door_open.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\email.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\email_link.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\email_open.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\feed.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\film.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\find.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\flag_blue.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\flag_green.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\flag_orange.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\flag_pink.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\flag_purple.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\flag_red.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\flag_yellow.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_brick.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_bug.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_camera.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_database.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_explore.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_feed.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_find.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_go.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_heart.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_image.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_key.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_lightbulb.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_link.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_magnify.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_page.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_page_white.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_palette.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_picture.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_star.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_table.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_user.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\folder_wrench.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\font.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\group.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\group_go.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\group_link.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\heart.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\help.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\hourglass.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\house.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\layers.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\layout.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\layout_header.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\layout_sidebar.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\lightbulb.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\lightbulb_off.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\lightning.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\link.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\lock.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\lorry.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\magnifier.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\map.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\money.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\mouse.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\newspaper.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\note.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\package.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\package_green.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\package_link.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_code.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_excel.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_find.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_gear.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_go.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_green.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_link.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_red.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_save.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_white.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_white_cup.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_white_database.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_white_excel.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_white_find.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_white_gear.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_white_get.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_white_go.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_white_link.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_white_magnify.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\page_white_wrench.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\plugin.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\plugin_disabled.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\printer.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\report.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\rss.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\script.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\script_gear.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\server.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\server_chart.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\server_connect.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\server_database.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\shield.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\sitemap.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\sitemap_color.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\star.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\status_offline.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\status_online.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\tab.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\table.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\table_gear.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\table_link.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\table_relationship.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\tag_blue.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\tag_green.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\tag_orange.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\tag_pink.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\tag_purple.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\tag_red.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\tag_yellow.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\telephone.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\tick.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\time.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\user.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\user_comment.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\user_female.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\user_gray.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\user_green.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\user_orange.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\user_red.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\user_suit.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\vcard.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\wand.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\world.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\wrench.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\wrench_orange.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\umbraco\images\umbraco\zoom.png" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Global\Global-Logo.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Global\Global-Pageinfo-Top.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Global\Global-Pageinfo-Bottom.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Global\Global-Footer.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Global\Global-Body-End-Include.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Global\Global-Head-End-Include.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Global\Global-Head-Meta.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Global\Global-Head-Title.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Global\Global-Search.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Modules\Modules-SitemapDotOrg.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Modules\Modules-Google-Analytics.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Modules\Modules-Add-This.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Modules\Rss\Modules-Rss-Head-Meta.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Navigation\Navigation-Tools.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Navigation\Navigation-Breadcrumb.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Navigation\Navigation-Secondary.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Navigation\Navigation-Primary.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\xslt\Navigation\Navigation-Service.xslt" />
+    <Content Include="Modules\Base - UPAC Foundation\Third Party\ImageGen\2.2.1.38932\ImageGen2.2.1.38932\ImageGen.dll" />
+    <Content Include="Modules\Base - UPAC Foundation\Third Party\ImageGen\readme.txt" />
+    <Content Include="Modules\Base - UPAC Foundation\Third Party\Macropicker\1.1\MacroPicker_1[1].1\256692c8-d586-4c7d-8b46-fef4a8116838\MacroPicker.dll" />
+    <Content Include="Modules\Base - UPAC Foundation\Third Party\Macropicker\1.1\MacroPicker_1[1].1\256692c8-d586-4c7d-8b46-fef4a8116838\package.xml" />
+    <Content Include="Modules\Base - UPAC Foundation\Third Party\Macropicker\Readme.txt" />
+    <Content Include="Modules\Event module\Package\masterpages\Event-DocumentType-EventDocument.master" />
+    <Content Include="Modules\Publication module\Package\masterpages\Publication-DocumentType-PublicationDocument.master" />
+    <None Include="Modules\Base - UPAC Foundation\PSD\favicon.psd" />
+    <None Include="Modules\Base - UPAC Foundation\PSD\sprite.psd" />
+    <None Include="Modules\Base - UPAC Foundation\PSD\upaclogo.psd" />
+    <None Include="Upac.Combined.build" />
+    <None Include="Modules\Base - UPAC Foundation\Package\Document Types\ConfigurationHtmlIncludes.udt" />
+    <None Include="Modules\Base - UPAC Foundation\Package\Webfiles\App_Data\log4net.xsd" />
+    <Content Include="Modules\Base - UPAC Foundation\Third Party\ImageGen\2.2.1.38932\ImageGen2.2.1.38932\ImageGen.ashx" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\App_Data\upac.documentTypeAliases.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\App_Data\upac.propertyAliases.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\App_Data\upac.settings.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\App_Data\umbracoevents.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Modules\Base - UPAC Foundation\Third Party\ImageGen\2.2.1.38932\ImageGen2.2.1.38932.zip" />
+    <None Include="Modules\Base - UPAC Foundation\Third Party\Macropicker\1.1\MacroPicker_1[1].1.zip" />
+    <Content Include="Modules\Event module\Package\Dictionary.xml" />
+    <Content Include="Modules\Event module\Package\Document Types\EventDocument.udt" />
+    <Content Include="Modules\Event module\Package\Document Types\EventModule.udt" />
+    <Content Include="Modules\Event module\Package\Document Types\EventMonthFolder.udt" />
+    <Content Include="Modules\Event module\Package\Document Types\EventYearFolder.udt" />
+    <Content Include="Modules\Event module\Package\Documents.xml" />
+    <Content Include="Modules\Event module\Package\Macros.xml" />
+    <Content Include="Modules\Event module\Package\package.xml" />
+    <Content Include="Modules\Event module\Package\Templates.xml" />
+    <Content Include="Modules\Event module\Package\Webfiles\xslt\Modules\Event\Event-DocumentType-EventDocument-Collumn-Right.xslt" />
+    <Content Include="Modules\Event module\Package\Webfiles\xslt\Modules\Event\Event-DocumentType-EventModule.xslt" />
+    <Content Include="Modules\Event module\Package\Webfiles\xslt\Modules\Event\Event-List-From-Seleced-Archive.xslt" />
+    <Content Include="Modules\News module\Package\Webfiles\xslt\Modules\News\News-DocumentType-NewsModule.xslt" />
+    <Content Include="Modules\News module\Package\Webfiles\xslt\Modules\News\News-List-From-Seleced-Archive.xslt" />
+    <Content Include="Modules\Publication module\Package\Dictionary.xml" />
+    <Content Include="Modules\Publication module\Package\Document Types\PublicationDocument.udt" />
+    <Content Include="Modules\Publication module\Package\Document Types\PublicationModule.udt" />
+    <Content Include="Modules\Publication module\Package\Document Types\PublicationMonthFolder.udt" />
+    <Content Include="Modules\Publication module\Package\Document Types\PublicationYearFolder.udt" />
+    <Content Include="Modules\Publication module\Package\Documents.xml" />
+    <Content Include="Modules\Publication module\Package\Macros.xml" />
+    <Content Include="Modules\Publication module\Package\package.xml" />
+    <Content Include="Modules\Publication module\Package\Templates.xml" />
+    <Content Include="Modules\News module\Package\Document Types\NewsMonthFolder.udt" />
+    <None Include="Upac.Foundation.build" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\Webfiles\App_Data\Log4Net.config" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\masterpages\SitemapDotOrg.master" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\masterpages\RSS.master" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\masterpages\Redirect.master" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\masterpages\Main.master" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\masterpages\Grid-Twelve.master" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\masterpages\Grid-Twelve-Container.master" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\masterpages\Grid-Three-Six-Three.master" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\masterpages\Grid-Three-Nine.master" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\masterpages\Frontpage.master" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\masterpages\Document-Wide.master" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\masterpages\Document-Normal.master" />
+    <Content Include="Modules\Base - UPAC Foundation\Package\masterpages\Document-Full-Width.master" />
+    <Content Include="Modules\News module\Package\Dictionary.xml" />
+    <Content Include="Modules\News module\Package\Document Types\NewsDocument.udt" />
+    <Content Include="Modules\News module\Package\Document Types\NewsModule.udt" />
+    <Content Include="Modules\News module\Package\Document Types\NewsYearFolder.udt" />
+    <Content Include="Modules\News module\Package\Documents.xml" />
+    <Content Include="Modules\News module\Package\Macros.xml" />
+    <Content Include="Modules\News module\Package\package.xml" />
+    <Content Include="Modules\News module\Package\Templates.xml" />
+    <Content Include="Modules\Module structure\Package\Dictionary.xml" />
+    <Content Include="Modules\Module structure\Package\Documents.xml" />
+    <Content Include="Modules\Module structure\Package\Macros.xml" />
+    <Content Include="Modules\Module structure\Package\package.xml" />
+    <Content Include="Modules\Module structure\Package\Templates.xml" />
+    <Content Include="Modules\Publication module\Package\Webfiles\xslt\Modules\Publication\Publication-DocumentType-PublicationDocument.xslt" />
+    <Content Include="Modules\Publication module\Package\Webfiles\xslt\Modules\Publication\Publication-DocumentType-PublicationModule.xslt" />
+    <Content Include="Modules\Publication module\Package\Webfiles\xslt\Modules\Publication\Publication-List-From-Seleced-Archive.xslt" />
+    <Content Include="web.config" />
+    <Content Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+    <Content Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\Combined\Package\" />
+    <Folder Include="Modules\Module structure\Package\Document Types\" />
+    <Folder Include="Modules\Module structure\Package\masterpages\" />
+    <Folder Include="Modules\Module structure\Package\Webfiles\" />
+    <Folder Include="Modules\News module\Package\masterpages\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60281</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

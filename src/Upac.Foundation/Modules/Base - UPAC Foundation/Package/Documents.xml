@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<Documents>
+		<DocumentSet importMode="root">
+			<node id="1068" parentID="-1" level="1" writerID="0" creatorID="0" nodeType="1066" template="1044" sortOrder="2" createDate="2010-07-09T11:22:15" updateDate="2010-07-09T12:45:16" nodeName="Website Name" urlName="website-name" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Frontpage" path="-1,1068">
+				<data alias="shortIntro"><![CDATA[]]></data>
+				<data alias="body"><![CDATA[]]></data>
+				<data alias="browserTitle" />
+				<data alias="date">2010-07-09T11:22:15</data>
+				<data alias="showEditDate" />
+				<data alias="showToTop" />
+				<data alias="image" />
+				<data alias="navigationTitle" />
+				<data alias="hideFromNavigation" />
+				<data alias="hideFromSitemap" />
+				<data alias="metaDescription" />
+				<data alias="metaKeywords" />
+				<data alias="metaNoIndex" />
+				<data alias="metaNoIndexOnDescendents" />
+				<data alias="umbracoUrlAlias" />
+				<data alias="mainMacro"><![CDATA[]]></data>
+				<node id="1071" parentID="1068" level="2" writerID="0" creatorID="0" nodeType="1065" template="0" sortOrder="3" createDate="2010-07-09T11:24:16" updateDate="2010-07-09T12:45:17" nodeName="Servicenavigation" urlName="servicenavigation" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="FolderNavigationService" path="-1,1068,1071">
+					<node id="1072" parentID="1071" level="3" writerID="0" creatorID="0" nodeType="1064" template="1044" sortOrder="1" createDate="2010-07-09T11:24:26" updateDate="2010-07-09T12:45:17" nodeName="Sitemap" urlName="sitemap" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Document" path="-1,1068,1071,1072">
+						<data alias="shortIntro"><![CDATA[]]></data>
+						<data alias="body"><![CDATA[]]></data>
+						<data alias="browserTitle" />
+						<data alias="date">2010-07-09T11:24:26</data>
+						<data alias="showEditDate" />
+						<data alias="showToTop" />
+						<data alias="image" />
+						<data alias="navigationTitle" />
+						<data alias="hideFromNavigation" />
+						<data alias="hideFromSitemap" />
+						<data alias="metaDescription" />
+						<data alias="metaKeywords" />
+						<data alias="metaNoIndex" />
+						<data alias="metaNoIndexOnDescendents" />
+						<data alias="umbracoUrlAlias" />
+						<data alias="mainMacro"><![CDATA[]]></data>
+					</node>
+					<node id="1073" parentID="1071" level="3" writerID="0" creatorID="0" nodeType="1064" template="1044" sortOrder="2" createDate="2010-07-09T11:24:33" updateDate="2010-07-09T12:45:17" nodeName="Contact" urlName="contact" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Document" path="-1,1068,1071,1073">
+						<data alias="shortIntro"><![CDATA[]]></data>
+						<data alias="body"><![CDATA[]]></data>
+						<data alias="browserTitle" />
+						<data alias="date">2010-07-09T11:24:33</data>
+						<data alias="showEditDate" />
+						<data alias="showToTop" />
+						<data alias="image" />
+						<data alias="navigationTitle" />
+						<data alias="hideFromNavigation" />
+						<data alias="hideFromSitemap" />
+						<data alias="metaDescription" />
+						<data alias="metaKeywords" />
+						<data alias="metaNoIndex" />
+						<data alias="metaNoIndexOnDescendents" />
+						<data alias="umbracoUrlAlias" />
+						<data alias="mainMacro"><![CDATA[]]></data>
+					</node>
+				</node>
+				<node id="1074" parentID="1068" level="2" writerID="0" creatorID="0" nodeType="1057" template="0" sortOrder="4" createDate="2010-07-09T11:24:42" updateDate="2010-07-09T12:45:17" nodeName="Configuration" urlName="configuration" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="ConfigurationContainer" path="-1,1068,1074">
+					<node id="1075" parentID="1074" level="3" writerID="0" creatorID="0" nodeType="1056" template="0" sortOrder="1" createDate="2010-07-09T11:24:52" updateDate="2010-07-09T12:45:17" nodeName="AddThis" urlName="addthis" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="ConfigurationAddThis" path="-1,1068,1074,1075">
+						<data alias="useAddThis">1</data>
+						<data alias="addthisScript">
+							<![CDATA[/* ADDTHIS BUTTON BEGIN */
+var addthisScript = (("https:" == document.location.protocol) ? "https://s7.addthis.com/" : "http://s7.addthis.com/");
+document.write(unescape("%3Cscript src='" + addthisScript + "js/250/addthis_widget.js' type='text/javascript'%3E%3C/script%3E"));
+var addthis_config = {
+    username: "1508",
+    ui_cobrand: "",
+    ui_header_color: "#ffffff",
+    ui_header_background: "#2E5A8C",
+    ui_language: "da",
+    ui_offset_top:50,
+    ui_offset_left: 0,
+    services_compact: "email, facebook, twitter, delicious, print, more",
+    services_expanded: "digg, favorites, friendfeed, linkedin, plaxo, reddit, slashdot, stumbleupon, technorati, tumblr",
+    services_exclude: ""
+};
+/* ADDTHIS BUTTON END */]]>
+						</data>
+					</node>
+					<node id="1076" parentID="1074" level="3" writerID="0" creatorID="0" nodeType="1058" template="0" sortOrder="2" createDate="2010-07-09T11:25:04" updateDate="2010-07-09T12:45:17" nodeName="Date and Time formats" urlName="date-and-time-formats" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="ConfigurationDateTime" path="-1,1068,1074,1076">
+						<data alias="dateFormatShort">dd.MM.yyyy</data>
+						<data alias="dateFormatLong">d. MMMM yyyy</data>
+						<data alias="dateTimeFormat">dd.MM.yyyy H:mm</data>
+						<data alias="timeFormat">H:mm</data>
+					</node>
+					<node id="1077" parentID="1074" level="3" writerID="0" creatorID="0" nodeType="1059" template="0" sortOrder="3" createDate="2010-07-09T11:25:13" updateDate="2010-07-09T12:45:17" nodeName="Default values" urlName="default-values" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="ConfigurationDefaultValuesContainer" path="-1,1068,1074,1077" />
+					<node id="1078" parentID="1074" level="3" writerID="0" creatorID="0" nodeType="1060" template="0" sortOrder="4" createDate="2010-07-09T11:25:25" updateDate="2010-07-09T12:45:17" nodeName="Email settings" urlName="email-settings" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="ConfigurationEmail" path="-1,1068,1074,1078">
+						<data alias="defaultToEmail">support@1508.dk</data>
+						<data alias="defaultFromEmail">support@1508.dk</data>
+						<data alias="noReplyEmail">noreply@1508.dk</data>
+						<data alias="defaultHeaderText"><![CDATA[]]></data>
+						<data alias="defaultHeaderHtml"><![CDATA[]]></data>
+						<data alias="defaultFooterText"><![CDATA[]]></data>
+						<data alias="defaultFooterHtml"><![CDATA[]]></data>
+					</node>
+					<node id="1079" parentID="1074" level="3" writerID="0" creatorID="0" nodeType="1061" template="0" sortOrder="5" createDate="2010-07-09T11:25:45" updateDate="2010-07-09T12:45:17" nodeName="Google Analytics" urlName="google-analytics" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="ConfigurationGoogle" path="-1,1068,1074,1079">
+						<data alias="webPropertyID" />
+					</node>
+					<node id="1080" parentID="1074" level="3" writerID="0" creatorID="0" nodeType="1062" template="0" sortOrder="6" createDate="2010-07-09T11:26:08" updateDate="2010-07-09T12:45:17" nodeName="RSS settings" urlName="rss-settings" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="ConfigurationRSS" path="-1,1068,1074,1080">
+						<data alias="managingEditor">cpa@1508.dk</data>
+						<data alias="webMaster">cpa@1508.dk</data>
+						<data alias="maxItemCount">15</data>
+						<data alias="appendToItemURL">?</data>
+					</node>
+					<node id="1081" parentID="1074" level="3" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="7" createDate="2010-07-09T11:26:15" updateDate="2010-07-09T12:45:17" nodeName="Search engine optimization" urlName="search-engine-optimization" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="ConfigurationSearchEngineOptimization" path="-1,1068,1074,1081">
+						<data alias="browserTitlePrefix" />
+						<data alias="browserTitleSuffix"> - UPAC powered</data>
+					</node>
+					<node id="1085" parentID="1074" level="3" writerID="0" creatorID="0" nodeType="1084" template="0" sortOrder="8" createDate="2010-07-09T15:51:52" updateDate="2010-07-09T16:07:42" nodeName="Footer" urlName="footer" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="ConfigurationFooter" path="-1,1068,1074,1085">
+						<data alias="footerText">
+							<![CDATA[1508 A/S &nbsp; &nbsp; &nbsp; &nbsp;
+Wilders Plads 13A, 2. &nbsp; &nbsp; &nbsp;
+1403 København K. &nbsp; &nbsp; &nbsp;
+
+E info@1508.dk &nbsp; &nbsp; &nbsp;
+T 7025 1508 &nbsp; &nbsp; &nbsp;
+F 7027 1508]]>
+						</data>
+					</node>
+					<node id="1086" parentID="1074" level="3" writerID="0" creatorID="0" nodeType="1084" template="0" sortOrder="8" createDate="2010-07-09T15:51:52" updateDate="2010-07-09T16:07:42" nodeName="HTML Includes" urlName="html-includes" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="ConfigurationHtmlIncludes" path="-1,1068,1074,1086">
+						<data alias="globalBodyEndInclude"><![CDATA[]]></data>
+						<data alias="globalHeadEndInclude"><![CDATA[]]></data>
+					</node>
+				</node>
+			</node>
+		</DocumentSet>
+	</Documents>
+</umbPackage>

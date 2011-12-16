@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+  <Info>
+    <Name>Base Document Type</Name>
+    <Alias>BaseDocumentType</Alias>
+    <Icon>page.png</Icon>
+    <Thumbnail>docWithImage.png</Thumbnail>
+    <Description></Description>
+    <AllowedTemplates>
+      <Template>Document-Normal</Template>
+      <Template>Document-Wide</Template>
+      <Template>Document-Full-Width</Template>
+    </AllowedTemplates>
+    <DefaultTemplate>Document-Normal</DefaultTemplate>
+  </Info>
+  <Structure>
+  </Structure>
+  <GenericProperties>
+    <Include src="Base.txt" xpath="/DocumentType/GenericProperties/GenericProperty" />
+  </GenericProperties>
+  <Tabs>
+    <Include src="Base.txt" xpath="/DocumentType/Tabs/Tab" />
+  </Tabs>
+</DocumentType>

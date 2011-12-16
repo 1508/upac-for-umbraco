@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+  <Info>
+    <Name>Frontpage</Name>
+    <Alias>Frontpage</Alias>
+    <Icon>house.png</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Description></Description>
+    <AllowedTemplates>
+      <Template>Frontpage</Template>
+    </AllowedTemplates>
+    <DefaultTemplate>Frontpage</DefaultTemplate>
+  </Info>
+  <Structure>
+	  <DocumentType>AreaDocument</DocumentType>
+	  <DocumentType>Document</DocumentType>
+	  <DocumentType>FolderNavigationService</DocumentType>
+    <DocumentType>ConfigurationContainer</DocumentType>
+  </Structure>
+  <GenericProperties>
+    <Include src="Base.txt" xpath="/DocumentType/GenericProperties/GenericProperty" />
+  </GenericProperties>
+  <Tabs>
+    <Include src="Base.txt" xpath="/DocumentType/Tabs/Tab" />
+  </Tabs>
+</DocumentType>

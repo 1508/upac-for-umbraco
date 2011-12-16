@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<DictionaryItems>
+		<DictionaryItem Key="Accessibility">
+			<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[]]></Value>
+			<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[]]></Value>
+			<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[]]></Value>
+			<DictionaryItem Key="Accessibility-PageTools">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Page tools]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Sideværktøjer]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Page tools]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Accessibility-SkipNavigation">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[SkipNavigation]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[SkipNavigation]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[SkipNavigation]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Accessibility-Search">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Search]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Søg]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Search]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Accessibility-BreadcrumbNavigation">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Breadcrumb navigation]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Brødkrummesti]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Breadcrumb navigation]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Accessibility-JumpToContent">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[JumpToContent]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[JumpToContent]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[JumpToContent]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Accessibility-PrimaryNavigation">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Primary navigation]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Primær navigation]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Primary navigation ]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Accessibility-ServiceNavigation">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[ServiceNavigation]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[ServiceNavigation]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[ServiceNavigation]]></Value>
+			</DictionaryItem>
+		</DictionaryItem>
+		<DictionaryItem Key="Base">
+			<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[]]></Value>
+			<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[]]></Value>
+			<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[]]></Value>
+			<DictionaryItem Key="Base-Property-webMaster-Description">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[The webMaster defines the e-mail address to the webmaster of the feed.]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[The webMaster defines the e-mail address to the webmaster of the feed.]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[The webMaster defines the e-mail address to the webmaster of the feed.]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-GlobalBodyEndInclude">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[HTML to include before the closing body tag]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[HTML som skal inkluderes før slut body tagget]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[HTML to include before the closing body tag]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-dateTimeFormat">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Date and time format]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Dato og Klokkeslet formatering]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Date and time format]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-defaultHeaderHtml">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Default header HTML]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Default header HTML]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Default header HTML]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-DocumentTypes-ConfigurationAddThis">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[AddThis Configuration]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[AddThis Konfiguration]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[AddThis Configuration]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-metaNoIndex">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Exclude page from search]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Ekskluder side fra søgning]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Exclude page from search]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-managingEditor">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[ManagingEditor]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[ManagingEditor]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[ManagingEditor]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-shortIntro">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Short intro text]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Intro tekst]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Short intro text]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-dateFormatShort">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Date format short]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Dato formatering kort]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Date format short]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-DocumentTypes-ConfigurationSearchEngineOptimization">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Search engine optimization]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Search engine optimization]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Search engine optimization]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-navigationTitle">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Title for navigations]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Titel til navigationer]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Title for navigations]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-webPropertyID">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Web property ID (UA-XXXXX-YY)]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Web property ID (UA-XXXXX-YY)]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Web property ID (UA-XXXXX-YY)]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-addthisScript">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[AddThis javascript]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[AddThis javascript]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[AddThis javascript]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-useAddThis-Description">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Use AddThis (write addthis script into the html)]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Use AddThis (write addthis script into the html)]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Use AddThis (write addthis script into the html)]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-timeFormat">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Time format]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Klokkeslet formatering]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Time format]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-noReplyEmail">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Default noreply email]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Default noreply email]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Default noreply email]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-image">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Page image]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Side billede]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Page image]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Tab-BrowserTitleBar">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Browser title bar]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Browser titel bar]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Browser title bar]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-hideFromSitemap">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Hide from sitemap]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Skjul fra sitemap]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Hide from sitemap]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-showPublishedDate">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Show published date]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Vis udgivelsestidspunkt]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Show published date]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-browserTitlePrefix">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Browser title prefix]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Browser titel prefix]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Browser title prefix]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-maxItemCount">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[MaxItemCount]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[MaxItemCount]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[MaxItemCount]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-showToTop">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Show to top link]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Vis til top link]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Show to top link]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Tab-Navigation">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Navigation]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Navigation]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Navigation]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-hideFromNavigation">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Hide from navigation]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Skjul i navigation]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Hide from navigation]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-DocumentTypes-ConfigurationContainer">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Configuration folder]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Konfigurations mappe]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Configuration folder]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-umbracoUrlAlias-Description">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Only lowercase]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Skal skrives med små bogstaver]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Only lowercase]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-addthisScript-Description">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Do not include script tags. For help, please see http://www.addthis.com/help/api-overview]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Do not include script tags. For help, please see http://www.addthis.com/help/api-overview]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Do not include script tags. For help, please see http://www.addthis.com/help/api-overview]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-metaKeywords">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Meta Keywords]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Meta Keywords]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Meta Keywords]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-GlobalHeadEndInclude">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[HTML to include before the closing head tag]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[HTML som skal inkluderes før slut head tagget]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[HTML to include before the closing head tag]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-DocumentTypes-ConfigurationDefaultValuesContainer">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Default Values Container]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Default Values Mappe]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Default Values Container]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-DocumentTypes-ConfigurationDateTime">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Date and Time Formats]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Dato og Klokkeslet formatering]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Date and Time Formats]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Tab-Data">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Data]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Data]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Data]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Tab-Images">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Images]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Billeder]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Images]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-showDate">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Show published date]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Vis udgivelsesdato]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Show published date]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-appendToItemURL-Description">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Can be used for appending a tracking querystring for the feed urls.]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Can be used for appending a tracking querystring for the feed urls.]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Can be used for appending a tracking querystring for the feed urls.]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-showEditDate">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Show last modified information]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Vis sidst redigeret information]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Show last modified information]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-defaultFromEmail">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Default from email]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Default afsender email]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Default from email]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-footerText">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Footer text]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Footer tekst]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Footer text]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-DocumentTypes-ConfigurationHtmlIncludes">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[HTML includes]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[HTML inkluderinger]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[HTML includes]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Tab-Settings">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Settings]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Indstillinger]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Settings]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-mainMacro">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Main functionality]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Hoved funktionalitet]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Main functionality]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-defaultHeaderText">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Default header text]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Default header tekst]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Default header text]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-DocumentTypes-Redirect">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Redirect]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Redirect]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Redirect]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-defaultFooterText">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Default footer text]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Default footer tekst]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Default footer text]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-metaNoIndexOnDescendents">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Exclude subpages from search]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Ekskluder undersider fra søgning]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Exclude subpages from search]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-labelRedirect">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Choose either internal or external link]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Vælg enten internt eller ekstert link]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Choose either internal or external link]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-umbracoRedirect">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Internal link]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Internt link]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Internal link]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-browserTitle">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Browser title]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Browser titel]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Browser title]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-externalLink">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[External link]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Eksternt link]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[External link]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-maxItemCount-Description">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[How many items should there be listed in the rss feed]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[How many items should there be listed in the rss feed]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[How many items should there be listed in the rss feed]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-DocumentTypes-ConfigurationRSS">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[RSS Configuration]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[RSS Konfiguration]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[RSS Configuration]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-labelRedirect-Description">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[If both the internal and external link are used, the internal take precedence over external]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Hvis både internt og eksternt link er brugt, tager internt præcedens over ekstern]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[If both the internal and external link are used, the internal take precedence over external]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-body">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Content]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Indhold]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Content]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Tab-SEO">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[SEO]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[SEO]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[SEO]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-metaDescription">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Meta Description]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Meta Description]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Meta Description]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-useAddThis">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Use AddThis]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Use AddThis]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Use AddThis]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-appendToItemURL">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[AppendToItemURL]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[AppendToItemURL]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[AppendToItemURL]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-DocumentTypes-ConfigurationEmail">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Email Configuration]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Email Konfiguration]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Email Configuration]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-dateFormatLong">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Date format lang]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Dato formatering lang]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Date format lang]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-date">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Published]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Udgivet]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Published]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-browserTitle-Description">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[If the field is empty page name will be used instead]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Hvis feltet er tomt bruges sidens navn]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[If the field is empty page name will be used instead]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-DocumentTypes-FolderNavigationService">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Servicenavigation folder]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Servicenavigation mappe]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Servicenavigation folder]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-managingEditor-Description">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[The managingEditor is used to specify an e-mail address for the editor of the content of the feed.]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[The managingEditor is used to specify an e-mail address for the editor of the content of the feed.]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[The managingEditor is used to specify an e-mail address for the editor of the content of the feed.]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-webMaster">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[WebMaster]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[WebMaster]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[WebMaster]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-DocumentTypes-ConfigurationGoogle">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Google Configuration]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Google Konfiguration]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Google Configuration]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-DocumentTypes-Document">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Document]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Dokument]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Document]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-DocumentTypes-AreaDocument">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Area document]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Område dokument]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Area document]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-macroContainer">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Modules]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Moduler]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Modules]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-defaultToEmail">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Default to email]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Default til email]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Default to email]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-umbracoUrlAlias">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Short URL]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Kort URL]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Short URL]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-browserTitleSuffix">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Browser title suffix]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Browser titel suffix]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Browser title suffix]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-externalLink-Description">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Remember http://]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Husk http://]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Remember http://]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-labelOr">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Or]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Eller]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Or]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-defaultFooterHtml">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Default footer HTML]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Default footer HTML]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Default footer HTML]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Base-Property-webPropertyID-Description">
+				<Value LanguageId="1" LanguageCultureAlias="en-US">
+					<![CDATA[Web property ID from Google Analytics.
+
+You can find your web property ID, informally referred to as UA number, by clicking the "check status" link or by searching for "UA-" in the source code of your web page. The web property ID has two parts: the X's (UA-XXXXX-YY) represent your account number and the Y's (UA-XXXXXX-YY) represent profile numbers within your account. The complete string (UA-XXXXX-YY) is referred to interchangably as your web property ID or UA number.]]>
+				</Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK">
+					<![CDATA[Web property ID from Google Analytics.
+
+You can find your web property ID, informally referred to as UA number, by clicking the "check status" link or by searching for "UA-" in the source code of your web page. The web property ID has two parts: the X's (UA-XXXXX-YY) represent your account number and the Y's (UA-XXXXXX-YY) represent profile numbers within your account. The complete string (UA-XXXXX-YY) is referred to interchangably as your web property ID or UA number.]]>
+				</Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB">
+					<![CDATA[Web property ID from Google Analytics.
+
+You can find your web property ID, informally referred to as UA number, by clicking the "check status" link or by searching for "UA-" in the source code of your web page. The web property ID has two parts: the X's (UA-XXXXX-YY) represent your account number and the Y's (UA-XXXXXX-YY) represent profile numbers within your account. The complete string (UA-XXXXX-YY) is referred to interchangably as your web property ID or UA number.]]>
+				</Value>
+			</DictionaryItem>
+		</DictionaryItem>
+		<DictionaryItem Key="Global">
+			<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[]]></Value>
+			<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[]]></Value>
+			<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[]]></Value>
+			<DictionaryItem Key="Global-ReadAloud-Text">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Read aloud]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Læs højt]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Read aloud]]></Value>
+			</DictionaryItem>
+            <DictionaryItem Key="Global-RSS">
+                <Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[RSS]]></Value>
+                <Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[RSS]]></Value>
+                <Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[RSS]]></Value>
+            </DictionaryItem>
+			<DictionaryItem Key="Global-Pageinfo-ToTop">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[To top]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Til top]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[To top]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Global-Breadcrumb-YouAreHere">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[You are here: ]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Du er her: ]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[You are here: ]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Global-ProvideSearchWord">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Search]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Søg]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Search]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Global-Frontpage">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Frontpage]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Forside]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Frontpage]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Global-PrintPage">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Print]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Print]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Print]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Global-Pageinfo-Published">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Published ]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Udgivet ]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Published ]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Global-ReadAloud-Link">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[http://www.adgangforalle.dk/]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[http://www.adgangforalle.dk/]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[http://www.adgangforalle.dk/]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Global-Search">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Search]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Søg]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Search]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Global-Pageinfo-LastUpdatedDate">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Last updated ]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Sidst opdateret ]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Last updated ]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Global-Breadcrumb-Frontpage">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Frontpage]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Forside]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Frontpage]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="Global-SharePage">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Share]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Del]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Share]]></Value>
+			</DictionaryItem>
+		</DictionaryItem>
+	</DictionaryItems>
+</umbPackage>

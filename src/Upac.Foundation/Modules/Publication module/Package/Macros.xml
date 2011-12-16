@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<Macros>
+		<macro>
+			<name>Publication-DocumentType-PublicationModule</name>
+			<alias>Publication-DocumentType-PublicationModule</alias>
+			<scriptType>
+			</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>Modules/Publication/Publication-DocumentType-PublicationModule.xslt</xslt>
+			<useInEditor>False</useInEditor>
+			<refreshRate>0</refreshRate>
+			<scriptingFile>
+			</scriptingFile>
+			<properties />
+		</macro>
+		<macro>
+			<name>Publication-DocumentType-PublicationDocument</name>
+			<alias>Publication-DocumentType-PublicationDocument</alias>
+			<scriptType>
+			</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>Modules/Publication/Publication-DocumentType-PublicationDocument.xslt</xslt>
+			<useInEditor>False</useInEditor>
+			<refreshRate>0</refreshRate>
+			<scriptingFile>
+			</scriptingFile>
+			<properties />
+		</macro>
+		<macro>
+			<name>Publication-List-From-Seleced-Archive</name>
+			<alias>Publication-List-From-Seleced-Archive</alias>
+			<scriptType>
+			</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>modules/news/Publication-List-From-Seleced-Archive.xslt</xslt>
+			<useInEditor>False</useInEditor>
+			<refreshRate>0</refreshRate>
+			<properties>
+				<property name="Box headline" alias="title" show="True" propertyType="text" />
+				<property name="Choose publication archive" alias="container" show="True" propertyType="contentPicker" />
+				<property name="Total publications in list" alias="maxNodesTotal" show="True" propertyType="number" />
+				<property name="Publications in focus" alias="nodesInFocus" show="True" propertyType="number" />
+				<property name="Link to archive" alias="linkToContainer" show="True" propertyType="bool" />
+				<property name="To archive text" alias="linkToContainerText" show="True" propertyType="text" />
+				<property name="Show RSS link" alias="showRssLink" show="True" propertyType="bool" />
+			</properties>
+		</macro>
+	</Macros>
+</umbPackage>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<files />
+	<info>
+		<package>
+			<name>Upac News Module</name>
+			<version></version>
+			<license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+			<url>http://www.1508.dk</url>
+			<requirements>
+				<major>4</major>
+				<minor>5</minor>
+				<patch>0</patch>
+			</requirements>
+		</package>
+		<author>
+			<name>Christian Palm, 1508 A/S</name>
+			<website>http://www.1508.dk</website>
+		</author>
+		<readme><![CDATA[]]></readme>
+	</info>
+	<Documents />
+	<DocumentTypes />
+	<Templates />
+	<Stylesheets />
+	<Macros />
+	<DictionaryItems />
+	<Languages />
+	<Actions>
+		<Action runat="install" alias="allowDocumenttype" documentTypeAlias="NewsDocument" parentDocumentTypeAlias="ConfigurationDefaultValuesContainer"/>
+		<Action runat="install" alias="allowDocumenttype" documentTypeAlias="NewsModule" parentDocumentTypeAlias="ConfigurationDefaultValuesContainer"/>
+		<Action runat="install" alias="allowDocumenttype" documentTypeAlias="NewsModule" parentDocumentTypeAlias="AreaDocument"/>
+		<Action runat="install" undo="false" alias="AddMacroAliasToMacroPicker" macroAliasToAdd="News-DocumentType-NewsModule" dataTypeNameToUpdate="Macro Picker" />
+		<Action runat="install" undo="false" alias="AddMacroAliasToMacroContainer" macroAliasToAdd="News-List-From-Seleced-Archive" dataTypeNameToUpdate="Macro Container" />
+		<Action runat="install" undo="false" alias="AddDefaultValueDocument">
+			<Document DocumentTypeAlias="NewsModule">
+				<Properties>
+					<Property name="mainMacro"><![CDATA[<?UMBRACO_MACRO macroalias="News-DocumentType-NewsModule" />]]></Property>
+				</Properties>
+			</Document>
+			<Document DocumentTypeAlias="NewsDocument">
+				<Properties>
+					<Property name="showPublishedDate">1</Property>
+				</Properties>
+			</Document>
+		</Action>
+	</Actions>
+	<DataTypes />
+	<control />
+</umbPackage>

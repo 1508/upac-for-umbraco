@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+  <Info>
+    <Name>#Base-DocumentTypes-FolderNavigationService</Name>
+    <Alias>FolderNavigationService</Alias>
+    <Icon>folder_link.png</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Description></Description>
+    <AllowedTemplates />
+    <DefaultTemplate />
+  </Info>
+  <Structure>
+    <DocumentType>Document</DocumentType>
+    <DocumentType>Redirect</DocumentType>
+  </Structure>
+  <GenericProperties />
+  <Tabs />
+</DocumentType>

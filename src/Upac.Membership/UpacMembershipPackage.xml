@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<files />
+	<info>
+		<package>
+			<name>Upac.Membership</name>
+			<version>1</version>
+			<license url="http://upac.1508.dk/license/membership">1508 License</license>
+			<url>http://upac.1508.dk/Modules/Membership</url>
+			<requirements>
+				<major>3</major>
+				<minor>0</minor>
+				<patch>0</patch>
+			</requirements>
+		</package>
+		<author>
+			<name>Christian Palm</name>
+			<website>www.1508.dk</website>
+		</author>
+		<readme><![CDATA[]]></readme>
+	</info>
+	<DocumentTypes />
+	<Templates />
+	<Stylesheets />
+	<Macros>
+		<macro>
+			<name>Upac.Membership.Activate</name>
+			<alias>Upac.Membership.Activate</alias>
+			<scriptType>/usercontrols/Upac/Membership/Activate.ascx</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>
+			</xslt>
+			<useInEditor>True</useInEditor>
+			<refreshRate>0</refreshRate>
+			<properties />
+		</macro>
+		<macro>
+			<name>Upac.Membership.Create</name>
+			<alias>Upac.Membership.Create</alias>
+			<scriptType>/usercontrols/Upac/Membership/Create.ascx</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>
+			</xslt>
+			<useInEditor>True</useInEditor>
+			<refreshRate>0</refreshRate>
+			<properties />
+		</macro>
+		<macro>
+			<name>Upac.Membership.Login</name>
+			<alias>Upac.Membership.Login</alias>
+			<scriptType>/usercontrols/Upac/Membership/Login.ascx</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>
+			</xslt>
+			<useInEditor>True</useInEditor>
+			<refreshRate>0</refreshRate>
+			<properties />
+		</macro>
+		<macro>
+			<name>Upac.Membership.Logout</name>
+			<alias>Upac.Membership.Logout</alias>
+			<scriptType>/usercontrols/Upac/Membership/Logout.ascx</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>
+			</xslt>
+			<useInEditor>True</useInEditor>
+			<refreshRate>0</refreshRate>
+			<properties>
+				<property name="Redirect Back To Page" alias="RedirectBackToPage" show="True" propertyType="bool" />
+			</properties>
+		</macro>
+		<macro>
+			<name>Upac.Membership.Navigation</name>
+			<alias>Upac.Membership.Navigation</alias>
+			<scriptType>
+			</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>upac/membership/upac-membership-navigation.xslt</xslt>
+			<useInEditor>False</useInEditor>
+			<refreshRate>0</refreshRate>
+			<properties />
+		</macro>
+		<macro>
+			<name>Upac.Membership.PasswordRecovery</name>
+			<alias>Upac.Membership.PasswordRecovery</alias>
+			<scriptType>/usercontrols/Upac/Membership/PasswordRecovery.ascx</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>
+			</xslt>
+			<useInEditor>True</useInEditor>
+			<refreshRate>0</refreshRate>
+			<properties />
+		</macro>
+		<macro>
+			<name>Upac.Membership.YourProfile</name>
+			<alias>Upac.Membership.YourProfile</alias>
+			<scriptType>/usercontrols/Upac/Membership/YourProfile.ascx</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>
+			</xslt>
+			<useInEditor>True</useInEditor>
+			<refreshRate>0</refreshRate>
+			<properties />
+		</macro>
+	</Macros>
+	<DictionaryItems />
+	<Languages />
+	<DataTypes />
+	<control>/usercontrols/Upac/Membership/MembershipInstaller.ascx</control>
+</umbPackage>

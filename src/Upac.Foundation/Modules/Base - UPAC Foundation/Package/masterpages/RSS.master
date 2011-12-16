@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+<script language="C#" runat="server">
+    private void Page_Init(object sender, EventArgs e)
+    {
+        base.DataBind();
+    }
+</script>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server"><umbraco:ContentType ID="ContentType1" MimeType="text/xml" runat="server"/><rss version="2.0">
+<channel xmlns:atom="http://www.w3.org/2005/Atom">
+	<title>
+		<umbraco:Item field="RssTitle" useIfEmpty="pageName" runat="server"></umbraco:Item>
+	</title>
+	<link>
+		<%# Upac.Core.LinkManager.GetNodeUrl(Upac.Core.UpacContext.Current.Node, "RSS", true) %>
+	</link>
+	<description>
+		<umbraco:Item field="RssDescription" useIfEmpty="ShortIntro" runat="server"></umbraco:Item>
+	</description>
+	<language>
+		<%# Upac.Core.Utilities.XsltExtension.GetCurrentCultureName() %>
+	</language>
+	<pubDate>
+		<%# Upac.Core.Utilities.DateUtil.CreateRfc822Date(DateTime.Now) %>
+	</pubDate>
+	<lastBuildDate>
+		<%# Upac.Core.Utilities.DateUtil.CreateRfc822Date(DateTime.Now) %>
+	</lastBuildDate>
+	<generator>1508 A/S Upac RSS generator</generator>
+	<managingEditor>
+		<%# Upac.Core.Utilities.CommonUtil.GetSetting("RSS/ManagingEditor") %>
+	</managingEditor>
+	<webMaster>
+		<%# Upac.Core.Utilities.CommonUtil.GetSetting("RSS/WebMaster") %>
+	</webMaster>
+	<atom:link href="<%# Upac.Core.LinkManager.GetNodeUrl(Upac.Core.UpacContext.Current.Node, "RSS", true) %>" rel="self" type="application/rss+xml" />
+<umbraco:Macro Alias="modules-rss-list" runat="server"></umbraco:Macro>
+	</channel>
+</rss>
+</asp:Content>

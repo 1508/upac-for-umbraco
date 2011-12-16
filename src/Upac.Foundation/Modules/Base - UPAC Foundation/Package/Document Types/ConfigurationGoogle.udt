@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+  <Info>
+    <Name>#Base-DocumentTypes-ConfigurationGoogle</Name>
+    <Alias>ConfigurationGoogle</Alias>
+    <Icon>google.png</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Description></Description>
+    <AllowedTemplates />
+    <DefaultTemplate />
+  </Info>
+  <Structure />
+  <GenericProperties>
+    <GenericProperty>
+      <Name>#Base-Property-webPropertyID</Name>
+      <Alias>webPropertyID</Alias>
+      <Type>ec15c1e5-9d90-422a-aa52-4f7622c63bea</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Google Analytics</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description>
+        <![CDATA[#Base-Property-webPropertyID-Description]]>
+      </Description>
+    </GenericProperty>
+  </GenericProperties>
+  <Tabs>
+    <Tab>
+      <Id>12</Id>
+      <Caption>Google Analytics</Caption>
+    </Tab>
+  </Tabs>
+</DocumentType>

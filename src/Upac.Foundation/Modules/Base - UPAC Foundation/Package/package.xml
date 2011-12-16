@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<files />
+	<info>
+		<package>
+			<name>Upac.Foundation</name>
+			<version></version>
+			<license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+			<url>http://www.1508.dk</url>
+			<requirements>
+				<major>4</major>
+				<minor>5</minor>
+				<patch>0</patch>
+			</requirements>
+		</package>
+		<author>
+			<name>Christian Palm, 1508 A/S</name>
+			<website>http://www.1508.dk</website>
+		</author>
+		<readme><![CDATA[This will setup document types, documents, dll's and xslt extension.]]></readme>
+	</info>
+	<Documents>
+		<DocumentSet importMode="root">
+		</DocumentSet>
+	</Documents>
+	<DocumentTypes />
+	<Templates />
+	<Stylesheets />
+	<Macros />
+	<DictionaryItems />
+	<Languages>
+		<Language Id="1" CultureAlias="en-US" FriendlyName="English (United States)" />
+		<Language Id="2" CultureAlias="da-DK" FriendlyName="Danish (Denmark)" />
+		<Language Id="3" CultureAlias="en-GB" FriendlyName="English (United Kingdom)" />
+	</Languages>
+	<Actions>
+		<Action runat="install" alias="addXsltExtension" assembly="Upac.Core" type="Upac.Core.Utilities.XsltExtension" extensionAlias="upac" />
+		<Action runat="install" undo="false" alias="AddXmlNodeToWebConfig">
+			<!-- upac events -->
+			<Item>
+				<XPath>/configuration/configSections</XPath>
+				<XPathCheckIfExist>/configuration/configSections/section[@name='umbracoevents']</XPathCheckIfExist>
+				<XmlNode>
+					<section name="umbracoevents" type="Upac.Events.Configuration.EventsSection, Upac.Events" />
+				</XmlNode>
+			</Item>
+			<Item>
+				<XPath>/configuration</XPath>
+				<XPathCheckIfExist>/configuration/umbracoevents</XPathCheckIfExist>
+				<InsertAfter>/configuration/configSections</InsertAfter>
+				<XmlNode>
+					<umbracoevents configSource="App_Data\umbracoevents.config" />
+				</XmlNode>
+			</Item>
+			<!-- log4net -->
+			<Item>
+				<XPath>/configuration/configSections</XPath>
+				<XPathCheckIfExist>/configuration/configSections/section[@name='log4net']</XPathCheckIfExist>
+				<XmlNode>
+					<section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net"/>
+				</XmlNode>
+			</Item>
+			<Item>
+				<XPath>/configuration</XPath>
+				<XPathCheckIfExist>/configuration/log4net</XPathCheckIfExist>
+				<InsertAfter>/configuration/configSections</InsertAfter>
+				<XmlNode>
+					<log4net configSource="App_Data\Log4Net.config" />
+				</XmlNode>
+			</Item>
+			<!-- upac core config -->
+			<Item>
+				<XPath>/configuration/configSections</XPath>
+				<XPathCheckIfExist>/configuration/configSections/sectionGroup[@name='upac']</XPathCheckIfExist>
+				<XmlNode>
+					<sectionGroup name="upac" type="System.Configuration.ConfigurationSectionGroup">
+						<section name="settings" type="Upac.Core.Configuration.SettingsSection, Upac.Core" />
+						<section name="propertyAliases" type="Upac.Core.Configuration.PropertyAliasesSection, Upac.Core" />
+						<section name="documentTypeAliases" type="Upac.Core.Configuration.DocumentTypeAliasesSection, Upac.Core" />
+					</sectionGroup>
+				</XmlNode>
+			</Item>
+			<Item>
+				<XPath>/configuration</XPath>
+				<XPathCheckIfExist>/configuration/upac</XPathCheckIfExist>
+				<InsertAfter>/configuration/configSections</InsertAfter>
+				<XmlNode>
+					<upac>
+						<documentTypeAliases configSource="App_Data\upac.documentTypeAliases.config" />
+						<settings configSource="App_Data\upac.settings.config" />
+						<propertyAliases configSource="App_Data\upac.propertyAliases.config" />
+					</upac>
+				</XmlNode>
+			</Item>
+			<!-- InitializeLog4Net -->
+			<Item>
+				<XPath>/configuration/system.web/httpModules</XPath>
+				<XPathCheckIfExist>/configuration/system.web/httpModules/add[@name='UpacInitializeLog4NetHttpModule']</XPathCheckIfExist>
+				<XmlNode>
+					<add name="UpacInitializeLog4NetHttpModule" type="Upac.Core.Diagnostics.InitializeLog4NetHttpModule, Upac.Core" />
+				</XmlNode>
+			</Item>
+			<Item>
+				<XPath>/configuration/system.webServer/modules</XPath>
+				<XPathCheckIfExist>/configuration/system.webServer/modules/add[@name='UpacInitializeLog4NetHttpModule']</XPathCheckIfExist>
+				<XmlNode>
+					<add name="UpacInitializeLog4NetHttpModule" type="Upac.Core.Diagnostics.InitializeLog4NetHttpModule, Upac.Core" />
+				</XmlNode>
+			</Item>
+		</Action>
+	</Actions>
+	<DataTypes>
+		<DataType Name="Macro Container" Id="474fcff8-9d2d-11de-abc6-ad7a56d89593" Definition="c7f72af9-9302-4e0e-a566-a3ec88e091fc">
+			<PreValues>
+				<PreValue Id="10" Value="|50|50|500" />
+			</PreValues>
+		</DataType>
+	</DataTypes>
+	<control></control>
+</umbPackage>

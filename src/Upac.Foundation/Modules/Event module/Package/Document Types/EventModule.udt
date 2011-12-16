@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+	<Info>
+		<Name>#EventModule-DocumentTypes-EventModule</Name>
+		<Alias>EventModule</Alias>
+		<Icon>calandar.png</Icon>
+		<Thumbnail>docWithImage.png</Thumbnail>
+		<Description></Description>
+		<AllowedTemplates>
+			<Template>Document-Normal</Template>
+			<Template>Document-Wide</Template>
+		</AllowedTemplates>
+		<DefaultTemplate>Document-Normal</DefaultTemplate>
+	</Info>
+	<Structure>
+		<DocumentType>EventYearFolder</DocumentType>
+	</Structure>
+	<GenericProperties>
+		<Include src="../../../Base - UPAC Foundation/Package/Document Types/Base.txt" xpath="/DocumentType/GenericProperties/GenericProperty" />
+	</GenericProperties>
+	<Tabs>
+		<Include src="../../../Base - UPAC Foundation/Package/Document Types/Base.txt" xpath="/DocumentType/Tabs/Tab" />
+	</Tabs>
+</DocumentType>

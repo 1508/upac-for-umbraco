@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<Macros>
+		<macro>
+			<name>Event-DocumentType-EventModule</name>
+			<alias>Event-DocumentType-EventModule</alias>
+			<scriptType>
+			</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>Modules/Event/Event-DocumentType-EventModule.xslt</xslt>
+			<useInEditor>False</useInEditor>
+			<refreshRate>0</refreshRate>
+			<scriptingFile>
+			</scriptingFile>
+			<properties />
+		</macro>
+		<macro>
+			<name>Event-DocumentType-EventDocument-Collumn-Right</name>
+			<alias>Event-DocumentType-EventDocument-Collumn-Right</alias>
+			<scriptType>
+			</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>Modules/Event/Event-DocumentType-EventDocument-Collumn-Right.xslt</xslt>
+			<useInEditor>False</useInEditor>
+			<refreshRate>0</refreshRate>
+			<scriptingFile>
+			</scriptingFile>
+			<properties />
+		</macro>
+		<macro>
+			<name>Event-List-From-Seleced-Archive</name>
+			<alias>Event-List-From-Seleced-Archive</alias>
+			<scriptType>
+			</scriptType>
+			<scriptAssembly>
+			</scriptAssembly>
+			<xslt>Modules/Event/Event-List-From-Seleced-Archive.xslt</xslt>
+			<useInEditor>False</useInEditor>
+			<refreshRate>0</refreshRate>
+			<properties>
+				<property name="Box headline" alias="title" show="True" propertyType="text" />
+				<property name="Choose event archive" alias="container" show="True" propertyType="contentPicker" />
+				<property name="Total events in list" alias="maxNodesTotal" show="True" propertyType="number" />
+				<property name="Events in focus" alias="nodesInFocus" show="True" propertyType="number" />
+				<property name="Link to archive" alias="linkToContainer" show="True" propertyType="bool" />
+				<property name="To archive text" alias="linkToContainerText" show="True" propertyType="text" />
+				<property name="Show RSS link" alias="showRssLink" show="True" propertyType="bool" />
+			</properties>
+		</macro>
+	</Macros>
+</umbPackage>

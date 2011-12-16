@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <Templates>
+    <Template>
+      <Name>Document Full Width</Name>
+      <Alias>Document-Full-Width</Alias>
+      <Master>Grid-Twelve</Master>
+      <Design></Design>
+    </Template>
+    <Template>
+      <Name>Document Normal</Name>
+      <Alias>Document-Normal</Alias>
+      <Master>Grid-Three-Six-Three</Master>
+      <Design></Design>
+    </Template>
+    <Template>
+      <Name>Document Wide</Name>
+      <Alias>Document-Wide</Alias>
+      <Master>Grid-Three-Nine</Master>
+      <Design></Design>
+    </Template>
+    <Template>
+      <Name>Frontpage</Name>
+      <Alias>Frontpage</Alias>
+      <Master>Main</Master>
+      <Design></Design>
+    </Template>
+    <Template>
+      <Name>Grid-Three-Nine</Name>
+      <Alias>Grid-Three-Nine</Alias>
+      <Master>Grid-Twelve-Container</Master>
+      <Design></Design>
+    </Template>
+    <Template>
+      <Name>Grid-Three-Six-Three</Name>
+      <Alias>Grid-Three-Six-Three</Alias>
+      <Master>Grid-Twelve-Container</Master>
+      <Design></Design>
+    </Template>
+    <Template>
+      <Name>Grid-Twelve</Name>
+      <Alias>Grid-Twelve</Alias>
+      <Master>Grid-Twelve-Container</Master>
+      <Design></Design>
+    </Template>
+    <Template>
+      <Name>Grid-Twelve-Container</Name>
+      <Alias>Grid-Twelve-Container</Alias>
+      <Master>Main</Master>
+      <Design></Design>
+    </Template>
+    <Template>
+      <Name>Main</Name>
+      <Alias>Main</Alias>
+      <Design></Design>
+    </Template>
+    <Template>
+      <Name>Redirect</Name>
+      <Alias>Redirect</Alias>
+      <Design></Design>
+    </Template>
+    <Template>
+      <Name>RSS</Name>
+      <Alias>RSS</Alias>
+      <Design></Design>
+    </Template>
+    <Template>
+      <Name>SitemapDotOrg</Name>
+      <Alias>SitemapDotOrg</Alias>
+      <Design></Design>
+    </Template>
+  </Templates>
+</umbPackage>

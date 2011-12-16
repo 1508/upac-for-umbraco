@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+  <Info>
+    <Name>#Base-DocumentTypes-ConfigurationDateTime</Name>
+    <Alias>ConfigurationDateTime</Alias>
+    <Icon>calendar.png</Icon>
+    <Thumbnail>folder.png</Thumbnail>
+    <Description></Description>
+    <AllowedTemplates />
+    <DefaultTemplate />
+  </Info>
+  <Structure />
+  <GenericProperties>
+    <GenericProperty>
+      <Name>#Base-Property-dateFormatShort</Name>
+      <Alias>dateFormatShort</Alias>
+      <Type>ec15c1e5-9d90-422a-aa52-4f7622c63bea</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Data</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description />
+    </GenericProperty>
+    <GenericProperty>
+      <Name>#Base-Property-dateFormatLong</Name>
+      <Alias>dateFormatLong</Alias>
+      <Type>ec15c1e5-9d90-422a-aa52-4f7622c63bea</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Data</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description />
+    </GenericProperty>
+    <GenericProperty>
+      <Name>#Base-Property-dateTimeFormat</Name>
+      <Alias>dateTimeFormat</Alias>
+      <Type>ec15c1e5-9d90-422a-aa52-4f7622c63bea</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Data</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description />
+    </GenericProperty>
+    <GenericProperty>
+      <Name>#Base-Property-timeFormat</Name>
+      <Alias>timeFormat</Alias>
+      <Type>ec15c1e5-9d90-422a-aa52-4f7622c63bea</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Data</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description />
+    </GenericProperty>
+  </GenericProperties>
+  <Tabs>
+    <Tab>
+      <Id>12</Id>
+      <Caption>Data</Caption>
+    </Tab>
+  </Tabs>
+</DocumentType>

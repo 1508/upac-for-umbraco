@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7EDAAD2-9C6C-49F2-A563-5E45413F4463}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Upac.Core</RootNamespace>
+    <AssemblyName>Upac.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Upac.Core.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Upac.Core.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'BuildScript|AnyCPU' ">
+    <OutputPath>bin\BuildScript\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="businesslogic, Version=1.0.3441.18044, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\umbraco\businesslogic.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="cms, Version=1.0.3441.17655, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\umbraco\cms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="interfaces, Version=1.0.3438.34252, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\umbraco\interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\log4net\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NVelocity, Version=1.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\NVelocity\NVelocity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel.Web">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="umbraco, Version=1.0.3441.17657, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\umbraco\umbraco.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="umbraco.DataLayer, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\umbraco\umbraco.DataLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="umbraco.editorControls, Version=1.0.3441.17665, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\umbraco\umbraco.editorControls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\ConfigurationManager.cs" />
+    <Compile Include="Configuration\DocumentTypeAliasesSection.cs" />
+    <Compile Include="Configuration\Elements\BoolElement.cs" />
+    <Compile Include="Configuration\Elements\StringElement.cs" />
+    <Compile Include="Configuration\PropertyAliasesSection.cs" />
+    <Compile Include="Configuration\SettingsSection.cs" />
+    <Compile Include="Data\NodeAxes.cs" />
+    <Compile Include="Diagnostics\Assert.cs" />
+    <Compile Include="Diagnostics\InitializeLog4netHttpModule.cs" />
+    <Compile Include="Events\SetDate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Events\SetDefaultValues.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Extensions\ControlExtensions.cs" />
+    <Compile Include="Extensions\NodeExtensions.cs" />
+    <Compile Include="HttpHandlers\RobotsTxt.cs" />
+    <Compile Include="LinkManager.cs" />
+    <Compile Include="Mail\IMailSender.cs" />
+    <Compile Include="Mail\Message.cs" />
+    <Compile Include="Mail\StandardSender.cs" />
+    <Compile Include="Packager\Actions\AddDefaultValueDocument.cs" />
+    <Compile Include="Packager\Actions\AddMacroAliasToMacroContainer.cs" />
+    <Compile Include="Packager\Actions\AddMacroAliasToMacroPicker.cs" />
+    <Compile Include="Packager\Actions\AddXmlNodeToWebConfig.cs" />
+    <Compile Include="Packager\Actions\MoveFile.cs" />
+    <Compile Include="Packager\NodeInstaller.cs" />
+    <Compile Include="Packager\NodeSettingInstaller.cs" />
+    <Compile Include="Security\RandomPassword.cs" />
+    <Compile Include="Utilities\FileUtil.cs" />
+    <Compile Include="Utilities\ImageUtil.cs" />
+    <Compile Include="Utilities\MailUtil.cs" />
+    <Compile Include="Utilities\OEmbedUtil.cs" />
+    <Compile Include="Utilities\StringUtil.cs" />
+    <Compile Include="Utilities\UmbracoUtil.cs" />
+    <Compile Include="Utilities\UrlString.cs" />
+    <Compile Include="Utilities\VelocityUtil.cs" />
+    <Compile Include="Utilities\XmlUtil.cs" />
+    <Compile Include="Webcontrols\OEmbed.cs" />
+    <Compile Include="Packager\Actions\AddConfigurationSection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UpacContext.cs" />
+    <Compile Include="Utilities\CacheUtil.cs" />
+    <Compile Include="Utilities\CommonUtil.cs" />
+    <Compile Include="Utilities\DateUtil.cs" />
+    <Compile Include="Utilities\SyndicationUtil.cs" />
+    <Compile Include="Utilities\XsltExtension.cs" />
+    <Compile Include="Webcontrols\ContentTypeChanger.cs" />
+    <Compile Include="Webcontrols\Setting.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Upac.Core.build" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EditorControls\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PreBuildEvent>if "$(ConfigurationName)" == "Debug" \\dev6\Utilities\Deployment\NArrange.Source.cmd "$(SolutionPath)"</PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<node id="1184" version="f6b938e1-64c4-4d00-a14f-315209254693" parentID="1125" level="4" writerID="0" creatorID="0" nodeType="1062" template="0" sortOrder="9" createDate="2010-03-24T13:31:34" updateDate="2010-04-06T10:36:11" nodeName="Membership" urlName="membership" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting container" path="-1,1084,1124,1125,1184">
+	<data alias="UpacSettingsHelper"><![CDATA[]]></data>
+	<node id="1185" version="cce561f4-d503-4564-b55a-3ed3960bd159" parentID="1184" level="5" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="0" createDate="2010-03-24T13:32:20" updateDate="2010-04-06T10:36:11" nodeName="Enabled" urlName="enabled" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1185">
+		<data alias="Text" />
+		<data alias="Default">1</data>
+		<data alias="Help"><![CDATA[Benyttes membership. 1 = true, 0 = false]]></data>
+		<data alias="ProtectRename">1</data>
+		<data alias="Hide">0</data>
+	</node>
+	<node id="1186" version="7f50365b-b2c6-4e8e-b373-4f77321335a4" parentID="1184" level="5" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="1" createDate="2010-03-24T13:33:26" updateDate="2010-04-06T10:36:11" nodeName="LoginUrl" urlName="loginurl" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1186">
+		<data alias="Text" />
+		<data alias="Default">/Bruger/Login.aspx</data>
+		<data alias="Help"><![CDATA[Login url]]></data>
+		<data alias="ProtectRename">1</data>
+		<data alias="Hide">0</data>
+	</node>
+	<node id="1193" version="37694253-30d7-4501-9aa3-1102d54e0e5c" parentID="1184" level="5" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="2" createDate="2010-03-24T13:47:04" updateDate="2010-04-06T10:36:11" nodeName="CreateUserUrl" urlName="createuserurl" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1193">
+		<data alias="Text" />
+		<data alias="Default">/Bruger/Opret-bruger.aspx</data>
+		<data alias="Help"><![CDATA[Opret bruger url]]></data>
+		<data alias="ProtectRename">1</data>
+		<data alias="Hide">0</data>
+	</node>
+	<node id="1187" version="1d604f06-5a79-4c7e-b653-8c7dd5025d66" parentID="1184" level="5" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="3" createDate="2010-03-24T13:33:59" updateDate="2010-04-06T10:36:11" nodeName="LogoutUrl" urlName="logouturl" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1187">
+		<data alias="Text" />
+		<data alias="Default">/Bruger/Logout.aspx</data>
+		<data alias="Help"><![CDATA[Logud url]]></data>
+		<data alias="ProtectRename">1</data>
+		<data alias="Hide">0</data>
+	</node>
+	<node id="1194" version="0e76c4cf-a348-4712-a7f9-f1dfbab48f02" parentID="1184" level="5" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="4" createDate="2010-03-24T14:02:15" updateDate="2010-04-06T10:36:11" nodeName="YourProfileUrl" urlName="yourprofileurl" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1194">
+		<data alias="Text" />
+		<data alias="Default">/Bruger/Din-Profil.aspx</data>
+		<data alias="Help"><![CDATA[Brugerprofil url]]></data>
+		<data alias="ProtectRename">1</data>
+		<data alias="Hide">0</data>
+	</node>
+	<node id="1251" version="8cf58996-d7f8-49c8-a049-917e0ded44d0" parentID="1184" level="5" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="5" createDate="2010-03-30T09:57:32" updateDate="2010-04-06T10:36:11" nodeName="PasswordRecoveryUrl" urlName="passwordrecoveryurl" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1251">
+		<data alias="Text" />
+		<data alias="Default">/Bruger/Glemt-login.aspx</data>
+		<data alias="Help"><![CDATA[Glemt password]]></data>
+		<data alias="ProtectRename">1</data>
+		<data alias="Hide">0</data>
+	</node>
+	<node id="1277" version="6697961a-f520-4065-bcee-ecea4b1c9916" parentID="1184" level="5" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="6" createDate="2010-03-31T09:54:23" updateDate="2010-04-06T10:36:11" nodeName="ActivateUrl" urlName="activateurl" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1277">
+		<data alias="Text" />
+		<data alias="Default">/activate/user.aspx</data>
+		<data alias="Help"><![CDATA[]]></data>
+		<data alias="ProtectRename">1</data>
+		<data alias="Hide">0</data>
+	</node>
+	<node id="1319" version="4e1ee374-420e-4d37-9cb3-741a6e8b4eae" parentID="1184" level="5" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="7" createDate="2010-04-06T09:50:16" updateDate="2010-04-06T10:36:11" nodeName="SecretCodeLength" urlName="secretcodelength" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1319">
+		<data alias="Text" />
+		<data alias="Default">7</data>
+		<data alias="Help"><![CDATA[]]></data>
+		<data alias="ProtectRename">1</data>
+		<data alias="Hide">0</data>
+	</node>
+	<node id="1232" version="fe741828-7275-4df1-b961-af2b4d315dcc" parentID="1184" level="5" writerID="0" creatorID="0" nodeType="1062" template="0" sortOrder="8" createDate="2010-03-26T14:02:25" updateDate="2010-04-06T10:36:11" nodeName="Login" urlName="login" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting container" path="-1,1084,1124,1125,1184,1232">
+		<data alias="UpacSettingsHelper"><![CDATA[]]></data>
+		<node id="1233" version="b240f9fb-6d04-4954-83e5-d54d64ba2ad6" parentID="1232" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="0" createDate="2010-03-26T14:02:44" updateDate="2010-04-06T10:36:11" nodeName="LoginErrorTextDefault" urlName="loginerrortextdefault" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1232,1233">
+			<data alias="Text" />
+			<data alias="Default">Brugernavn og adgangskode matcher ikke</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1234" version="236a03e2-df7f-4ffd-8944-6d06cb0d5682" parentID="1232" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="1" createDate="2010-03-26T14:04:23" updateDate="2010-04-06T10:36:11" nodeName="LoginErrorTextLocked" urlName="loginerrortextlocked" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1232,1234">
+			<data alias="Text" />
+			<data alias="Default">Du konto er lukket.</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1235" version="dfd46408-d14c-4c2a-ba5a-e3fb5c4f5016" parentID="1232" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="2" createDate="2010-03-26T14:04:43" updateDate="2010-04-06T10:36:11" nodeName="LoginErrorTextNotApproved" urlName="loginerrortextnotapproved" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1232,1235">
+			<data alias="Text" />
+			<data alias="Default">Du er endnu ikke godkendt</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1237" version="87b1ea26-84f2-459a-828a-47a9716d66f1" parentID="1232" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="4" createDate="2010-03-26T14:06:09" updateDate="2010-04-06T10:36:11" nodeName="InstructionText" urlName="instructiontext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1232,1237">
+			<data alias="Text" />
+			<data alias="Default">Udfyld formularen for at logge ind.</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1240" version="9426ee0d-12c1-4111-8d21-c7f98eddb39f" parentID="1232" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="5" createDate="2010-03-26T14:07:42" updateDate="2010-04-06T10:36:11" nodeName="PasswordLabelText" urlName="passwordlabeltext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1232,1240">
+			<data alias="Text" />
+			<data alias="Default">Adgangskode</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1241" version="7e56d41b-a5ac-4dd6-83a7-146a6c85931e" parentID="1232" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="6" createDate="2010-03-26T14:08:02" updateDate="2010-04-06T10:36:11" nodeName="UserNameLabelText" urlName="usernamelabeltext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1232,1241">
+			<data alias="Text" />
+			<data alias="Default">Brugernavn</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1238" version="e83310b6-636f-46db-8248-76425d44bc03" parentID="1232" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="7" createDate="2010-03-26T14:06:47" updateDate="2010-04-06T10:36:11" nodeName="DisplayRememberMe" urlName="displayrememberme" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1232,1238">
+			<data alias="Text" />
+			<data alias="Default">1</data>
+			<data alias="Help"><![CDATA[1 = ja, 0 = nej]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1242" version="42625c9f-ebc7-4b6f-8dc4-8843c9dc4183" parentID="1232" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="8" createDate="2010-03-26T14:08:40" updateDate="2010-04-06T10:36:11" nodeName="RememberMeText" urlName="remembermetext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1232,1242">
+			<data alias="Text" />
+			<data alias="Default">Husk mig</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1239" version="89a51102-e5de-4059-8e73-1b4ed632ad69" parentID="1232" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="9" createDate="2010-03-26T14:07:18" updateDate="2010-04-06T10:36:11" nodeName="LoginButtonText" urlName="loginbuttontext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1232,1239">
+			<data alias="Text" />
+			<data alias="Default">Login</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1243" version="48028dcb-f506-4b08-889d-537d67c8932a" parentID="1232" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="11" createDate="2010-03-26T14:13:24" updateDate="2010-04-06T10:36:11" nodeName="PasswordRequiredErrorMessage" urlName="passwordrequirederrormessage" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1232,1243">
+			<data alias="Text" />
+			<data alias="Default">Feltet adgangskode skal udfyldes</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1244" version="b803791e-a3cb-4b19-9129-9e94b2070552" parentID="1232" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="12" createDate="2010-03-26T14:14:19" updateDate="2010-04-06T10:36:11" nodeName="UserNameRequiredErrorMessage" urlName="usernamerequirederrormessage" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1232,1244">
+			<data alias="Text" />
+			<data alias="Default">Du skal udfylde feltet brugernavn</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1296" version="b24a88a9-2bbf-46af-b000-39a1649ca4b6" parentID="1232" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="13" createDate="2010-03-31T13:14:52" updateDate="2010-04-06T10:36:11" nodeName="PasswordRecoveryText" urlName="passwordrecoverytext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1232,1296">
+			<data alias="Text" />
+			<data alias="Default">Glemt password?</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1297" version="a959a05c-b0d7-4815-9e5b-36e828720b3e" parentID="1232" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="14" createDate="2010-03-31T13:15:23" updateDate="2010-04-06T10:36:11" nodeName="CreateUserText" urlName="createusertext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1232,1297">
+			<data alias="Text" />
+			<data alias="Default">Opret profil</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1298" version="180e1ad5-8a16-4de7-bce2-c3b136a254ae" parentID="1232" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="14" createDate="2010-03-31T14:06:27" updateDate="2010-04-06T10:36:11" nodeName="YouAreNowLoggedIn" urlName="youarenowloggedin" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1232,1298">
+			<data alias="Text" />
+			<data alias="Default">Du er nu logget ind.</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+	</node>
+	<node id="1197" version="d38099f0-db99-43a1-98e1-1b313236a222" parentID="1184" level="5" writerID="0" creatorID="0" nodeType="1062" template="0" sortOrder="9" createDate="2010-03-24T14:35:06" updateDate="2010-04-06T10:36:11" nodeName="CreateUserWizard" urlName="createuserwizard" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting container" path="-1,1084,1124,1125,1184,1197">
+		<data alias="UpacSettingsHelper"><![CDATA[]]></data>
+		<node id="1204" version="88f0b176-2fa6-4637-bd2d-8a640384171d" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="0" createDate="2010-03-24T14:43:20" updateDate="2010-04-06T10:36:11" nodeName="Approval" urlName="approval" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1204">
+			<data alias="Text" />
+			<data alias="Default">ConfirmEmailFirst</data>
+			<data alias="Help"><![CDATA[AutoApprove, ConfirmEmailFirst, NeedApproval]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1208" version="e15da10b-fa48-4c77-9388-e1b125ab2aac" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="1" createDate="2010-03-24T14:45:42" updateDate="2010-04-06T10:36:11" nodeName="UnknownErrorMessage" urlName="unknownerrormessage" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1208">
+			<data alias="Text" />
+			<data alias="Default">Der er sket en ukendt fejl.</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1322" version="9e522e8d-431e-42ec-8cd5-38e56f00ca6d" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="2" createDate="2010-04-06T11:51:34" updateDate="2010-04-06T11:51:59" nodeName="ShowNickname" urlName="shownickname" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1322">
+			<data alias="Text" />
+			<data alias="Default">1</data>
+			<data alias="Help"><![CDATA[1 = ja, 0 = nej]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1323" version="ed418133-b934-4fac-b7a1-6ce4f15d95b9" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="3" createDate="2010-04-06T12:27:52" updateDate="2010-04-06T12:27:59" nodeName="NicknameLabelText" urlName="nicknamelabeltext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1323">
+			<data alias="Text" />
+			<data alias="Default">Navn</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1324" version="23ad5b3f-136f-4d59-aff8-c0c7f2924b09" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="4" createDate="2010-04-06T12:28:18" updateDate="2010-04-06T12:28:32" nodeName="NicknameRequiredErrorMessage" urlName="nicknamerequirederrormessage" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1324">
+			<data alias="Text" />
+			<data alias="Default">Navn skal udfyldes</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1207" version="b640d6d9-cbe3-421b-a322-675822540aa6" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="5" createDate="2010-03-24T14:45:23" updateDate="2010-04-06T10:36:11" nodeName="UserNameRequiredErrorMessage" urlName="usernamerequirederrormessage" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1207">
+			<data alias="Text" />
+			<data alias="Default">Email skal udfyldes</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1198" version="f9ab5cc6-5376-4e8b-b564-836878151878" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="6" createDate="2010-03-24T14:35:28" updateDate="2010-04-06T10:36:11" nodeName="DuplicateUserNameErrorMessage" urlName="duplicateusernameerrormessage" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1198">
+			<data alias="Text" />
+			<data alias="Default">Email er allerede i brug</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1199" version="740ad946-78b1-45b4-91fe-c7fe47cf6b61" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="7" createDate="2010-03-24T14:36:06" updateDate="2010-04-06T10:36:11" nodeName="UserNameLabelText" urlName="usernamelabeltext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1199">
+			<data alias="Text" />
+			<data alias="Default">Email</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1219" version="d3d59ab1-1f84-49a3-adcc-44b2027e3609" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="8" createDate="2010-03-24T16:06:59" updateDate="2010-04-06T10:36:11" nodeName="EmailRegularExpression" urlName="emailregularexpression" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1219">
+			<data alias="Text" />
+			<data alias="Default">\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1227" version="4c1f1a7d-31ef-410c-8a27-78a85c337efe" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="9" createDate="2010-03-25T09:42:12" updateDate="2010-04-06T10:36:11" nodeName="EmailRegularExpressionErrorMessage" urlName="emailregularexpressionerrormessage" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1227">
+			<data alias="Text" />
+			<data alias="Default">E-mail adresse skal være i et valid format</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1200" version="8d9a848d-3b9c-4580-9969-da50cdd9e58f" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="10" createDate="2010-03-24T14:36:23" updateDate="2010-04-06T10:36:12" nodeName="PasswordLabelText" urlName="passwordlabeltext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1200">
+			<data alias="Text" />
+			<data alias="Default">Adgangskode</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1205" version="d551f40a-4b89-4570-876a-3dae0398b51c" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="11" createDate="2010-03-24T14:44:30" updateDate="2010-04-06T10:36:12" nodeName="PasswordRequiredErrorMessage" urlName="passwordrequirederrormessage" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1205">
+			<data alias="Text" />
+			<data alias="Default">Adgangskode skal udfyldes</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1248" version="ac030bb5-608b-40ff-ad54-9be005fd2691" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="12" createDate="2010-03-26T15:26:47" updateDate="2010-04-06T10:36:12" nodeName="PasswordRegularExpression" urlName="passwordregularexpression" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1248">
+			<data alias="Text" />
+			<data alias="Default">\w{6,}</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1206" version="6a5b8112-1a67-498b-8657-40435aafb48e" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="13" createDate="2010-03-24T14:44:59" updateDate="2010-04-06T10:36:12" nodeName="PasswordRegularExpressionErrorMessage" urlName="passwordregularexpressionerrormessage" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1206">
+			<data alias="Text" />
+			<data alias="Default">Dit password skal bestå af mindst 6 tegn</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1211" version="9a683e2b-9c34-427a-9b8f-dc29f02d6725" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="14" createDate="2010-03-24T14:47:13" updateDate="2010-04-06T10:36:12" nodeName="ConfirmPasswordLabelText" urlName="confirmpasswordlabeltext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1211">
+			<data alias="Text" />
+			<data alias="Default">Bekræft adgangskode</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1212" version="7e9d80f4-38d8-43ed-8ba1-9586905a3a34" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="15" createDate="2010-03-24T14:47:30" updateDate="2010-04-06T10:36:12" nodeName="ConfirmPasswordCompareErrorMessage" urlName="confirmpasswordcompareerrormessage" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1212">
+			<data alias="Text" />
+			<data alias="Default">De to adgangskoder er ikke ens</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1213" version="918cc2c9-36ca-4720-ad7f-dfb9b44cb663" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="16" createDate="2010-03-24T14:47:55" updateDate="2010-04-06T10:36:12" nodeName="ConfirmPasswordRequiredErrorMessage" urlName="confirmpasswordrequirederrormessage" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1213">
+			<data alias="Text" />
+			<data alias="Default">Du skal bekræfte angangskoden</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1228" version="e6ac6095-7534-47d1-9dca-5507d493373d" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="17" createDate="2010-03-25T10:02:39" updateDate="2010-04-06T10:36:12" nodeName="DefaultMemberGroups" urlName="defaultmembergroups" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1228">
+			<data alias="Text" />
+			<data alias="Default">Extranet</data>
+			<data alias="Help"><![CDATA[Angiv member groups kommasepareret]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1254" version="781ae02f-bbea-446e-9e30-b55f07b7450f" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="18" createDate="2010-03-30T10:36:03" updateDate="2010-04-06T10:36:12" nodeName="CreateUserButtonText" urlName="createuserbuttontext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1254">
+			<data alias="Text" />
+			<data alias="Default">Opret profil</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1258" version="f9c4856f-ee29-44e5-b8e3-9822b4c43038" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1062" template="0" sortOrder="19" createDate="2010-03-30T11:12:23" updateDate="2010-04-06T10:36:12" nodeName="ReceiptConfirmEmailFirst" urlName="receiptconfirmemailfirst" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting container" path="-1,1084,1124,1125,1184,1197,1258">
+			<data alias="UpacSettingsHelper"><![CDATA[]]></data>
+			<node id="1261" version="8162232b-c2d9-4748-9583-9900558f4352" parentID="1258" level="7" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="2" createDate="2010-03-30T11:19:17" updateDate="2010-04-06T10:36:12" nodeName="EmailSubject" urlName="emailsubject" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1258,1261">
+				<data alias="Text" />
+				<data alias="Default">Aktivering af profil</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1262" version="f1d48589-ae3d-4edc-852d-9f4782a01fa7" parentID="1258" level="7" writerID="0" creatorID="0" nodeType="1256" template="0" sortOrder="3" createDate="2010-03-30T11:19:42" updateDate="2010-04-06T10:36:12" nodeName="EmailBody" urlName="emailbody" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text multiline" path="-1,1084,1124,1125,1184,1197,1258,1262">
+				<data alias="Text"><![CDATA[]]></data>
+				<data alias="Default">
+					<![CDATA[<p style="font-family: verdana; font-size: 11px;">
+Før vi kan aktivere din profil, skal du bekræfte din email adresse.
+<br /><br />
+<a href="$link" style="font-weight: bold;">klik her for at bekræfte din email adresse</a>
+<br />
+<br />
+<em>Hvis ovenstående link ikke virker, kan du prøve at kopier nedenstående link til din browser. Du skal være opmærksom på ikke at lave ekstra mellemrum.<br />
+$link
+</em>
+</p>]]>
+				</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1263" version="df60dae1-ae1c-4041-9845-0e873cad3219" parentID="1258" level="7" writerID="0" creatorID="0" nodeType="1256" template="0" sortOrder="3" createDate="2010-03-30T11:30:59" updateDate="2010-04-06T10:36:12" nodeName="Screen" urlName="screen" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text multiline" path="-1,1084,1124,1125,1184,1197,1258,1263">
+				<data alias="Text"><![CDATA[]]></data>
+				<data alias="Default">
+					<![CDATA[<p>Din profil er nu oprettet men ikke aktiv.</p>
+<p>Før vi kan aktivere din profil, skal du bekræfte din email adresse via den email som vi har sendt til dig.</p>]]>
+				</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+		</node>
+		<node id="1259" version="a8c21df8-8005-43b3-9b3c-b0c46c5efd7c" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1062" template="0" sortOrder="20" createDate="2010-03-30T11:12:32" updateDate="2010-04-06T10:36:12" nodeName="ReceiptNeedApproval" urlName="receiptneedapproval" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting container" path="-1,1084,1124,1125,1184,1197,1259">
+			<data alias="UpacSettingsHelper"><![CDATA[]]></data>
+			<node id="1264" version="510e9fa0-687b-4a6e-ab14-6d6f87f03bb9" parentID="1259" level="7" writerID="0" creatorID="0" nodeType="1256" template="0" sortOrder="1" createDate="2010-03-30T11:47:27" updateDate="2010-04-06T10:36:12" nodeName="Screen" urlName="screen" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text multiline" path="-1,1084,1124,1125,1184,1197,1259,1264">
+				<data alias="Text"><![CDATA[]]></data>
+				<data alias="Default">
+					<![CDATA[<p>Din profil er nu oprettet men ikke aktiv.</p>
+<p>Vi skal aktivere din profil før du kan logge ind. Det sker normalt inden for 24 timer.</p>]]>
+				</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1271" version="fc4122b4-472b-4c03-a21a-b8ce549079f4" parentID="1259" level="7" writerID="0" creatorID="0" nodeType="1256" template="0" sortOrder="2" createDate="2010-03-30T13:27:58" updateDate="2010-04-06T10:36:12" nodeName="EmailBody" urlName="emailbody" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text multiline" path="-1,1084,1124,1125,1184,1197,1259,1271">
+				<data alias="Text"><![CDATA[]]></data>
+				<data alias="Default">
+					<![CDATA[<p>
+Der er blevet oprettet en ny profil.
+<br />klik på linket nedenfor for at godkende og aktivere profilen.
+<a href="$link">$link</a>
+<p/>
+<table>
+<tr>
+<td>Email</td>
+<td>$member.Email</td>
+</tr>
+<tr>
+<td colspan="2">Profil egenskaber</td>
+</tr>
+#foreach($property in $member.GenericProperties)
+	#if($property.Value != "")
+       <tr>
+			<td>
+				$property.PropertyType.Alias
+			</td>
+			<td>
+				$property.Value
+			</td>
+	   </tr>
+	#end
+#end
+</table>]]>
+				</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1272" version="d0464340-ad74-4cdf-a77e-7a1bd5a27e6d" parentID="1259" level="7" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="3" createDate="2010-03-30T13:28:28" updateDate="2010-04-06T10:36:12" nodeName="EmailSubject" urlName="emailsubject" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1259,1272">
+				<data alias="Text" />
+				<data alias="Default">Ny profil</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1273" version="13710446-a4ce-419f-9b96-3a93c4fbfe27" parentID="1259" level="7" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="4" createDate="2010-03-30T13:42:20" updateDate="2010-04-06T10:36:12" nodeName="EmailProfileApprovedSubject" urlName="emailprofileapprovedsubject" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1197,1259,1273">
+				<data alias="Text" />
+				<data alias="Default">Din profil er godkendt</data>
+				<data alias="Help"><![CDATA[Sendes efter at en webmaster har godkendt profilen.]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1274" version="8a6bd7d3-db05-4f90-bd8a-8c1cc16542f8" parentID="1259" level="7" writerID="0" creatorID="0" nodeType="1256" template="0" sortOrder="5" createDate="2010-03-30T13:43:10" updateDate="2010-04-06T10:36:12" nodeName="EmailProfileApprovedBody" urlName="emailprofileapprovedbody" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text multiline" path="-1,1084,1124,1125,1184,1197,1259,1274">
+				<data alias="Text"><![CDATA[]]></data>
+				<data alias="Default">
+					<![CDATA[<p>Din profil er godkendt
+<br />
+Brugernavn: $member.Email
+<br />
+<br />
+<a href="$link">Gå til hjemmesiden</a>
+</p>]]>
+				</data>
+				<data alias="Help"><![CDATA[Sendes efter at en webmaster har godkendt profilen.]]></data>
+				<data alias="ProtectRename">0</data>
+				<data alias="Hide">0</data>
+			</node>
+		</node>
+		<node id="1257" version="58c8b5ed-c2c1-49d5-997b-731aedd5dd7d" parentID="1197" level="6" writerID="0" creatorID="0" nodeType="1062" template="0" sortOrder="21" createDate="2010-03-30T11:12:10" updateDate="2010-04-06T10:36:12" nodeName="ReceiptAutoApprove" urlName="receiptautoapprove" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting container" path="-1,1084,1124,1125,1184,1197,1257">
+			<data alias="UpacSettingsHelper"><![CDATA[]]></data>
+			<node id="1260" version="28e08978-9022-408c-b71f-d33b27075c6e" parentID="1257" level="7" writerID="0" creatorID="0" nodeType="1256" template="0" sortOrder="7" createDate="2010-03-30T11:17:00" updateDate="2010-04-06T10:36:12" nodeName="Screen" urlName="screen" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text multiline" path="-1,1084,1124,1125,1184,1197,1257,1260">
+				<data alias="Text"><![CDATA[]]></data>
+				<data alias="Default"><![CDATA[<p>Din profil er oprettet</p>]]></data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+		</node>
+	</node>
+	<node id="1201" version="a947833f-1537-49ae-b1fb-0039b2933d33" parentID="1184" level="5" writerID="0" creatorID="0" nodeType="1062" template="0" sortOrder="10" createDate="2010-03-24T14:37:25" updateDate="2010-04-06T10:36:12" nodeName="Navigation" urlName="navigation" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting container" path="-1,1084,1124,1125,1184,1201">
+		<data alias="UpacSettingsHelper"><![CDATA[]]></data>
+		<node id="1188" version="99d4bd01-983c-4d1c-a730-4b1a8ba1773e" parentID="1201" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="1" createDate="2010-03-24T13:35:35" updateDate="2010-04-06T10:36:12" nodeName="YouAreLoggedInAsTextPrefix" urlName="youareloggedinastextprefix" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1201,1188">
+			<data alias="Text" />
+			<data alias="Default">Du er logget ind som</data>
+			<data alias="Help"><![CDATA[Du er logget ind som prefix]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1189" version="cc0d22dc-f4b4-4590-9753-d2f81414e3e2" parentID="1201" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="2" createDate="2010-03-24T13:36:16" updateDate="2010-04-06T10:36:12" nodeName="YouAreLoggedInAsTextSuffix" urlName="youareloggedinastextsuffix" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1201,1189">
+			<data alias="Text" />
+			<data alias="Default" />
+			<data alias="Help"><![CDATA[Du er logget ind som suffix]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1190" version="189186b9-ad34-412e-ad0f-eeaf73ad10a5" parentID="1201" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="3" createDate="2010-03-24T13:36:45" updateDate="2010-04-06T10:36:12" nodeName="LoginText" urlName="logintext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1201,1190">
+			<data alias="Text" />
+			<data alias="Default">Login</data>
+			<data alias="Help"><![CDATA[Login tekst]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1192" version="a45c85a8-dfea-4167-b164-36f7cb954d9b" parentID="1201" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="5" createDate="2010-03-24T13:46:35" updateDate="2010-04-06T10:36:12" nodeName="CreateUserText" urlName="createusertext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1201,1192">
+			<data alias="Text" />
+			<data alias="Default">Opret profil</data>
+			<data alias="Help"><![CDATA[Opret bruger tekst]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1191" version="48e2cade-40c3-4b4e-9498-6578bca92932" parentID="1201" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="6" createDate="2010-03-24T13:37:10" updateDate="2010-04-06T10:36:12" nodeName="LogoutText" urlName="logouttext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1201,1191">
+			<data alias="Text" />
+			<data alias="Default">Logud</data>
+			<data alias="Help"><![CDATA[Logud tekst]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+	</node>
+	<node id="1291" version="fd7c3a06-ef50-4f91-9649-3c1eddfc2b9e" parentID="1184" level="5" writerID="0" creatorID="0" nodeType="1062" template="0" sortOrder="11" createDate="2010-03-31T12:27:44" updateDate="2010-04-06T10:36:12" nodeName="Activate" urlName="activate" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting container" path="-1,1084,1124,1125,1184,1291">
+		<data alias="UpacSettingsHelper"><![CDATA[]]></data>
+		<node id="1292" version="7ef59634-ba8d-4321-8b40-2e1e2023371b" parentID="1291" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="1" createDate="2010-03-31T12:28:18" updateDate="2010-04-06T10:36:12" nodeName="UrlError" urlName="urlerror" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1291,1292">
+			<data alias="Text" />
+			<data alias="Default">Der er sket en fejl. Du skal sikre dig at du har fået hele adressen med fra din email klient.</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1293" version="f6ecfdda-6399-40b7-b062-adf90b0c3913" parentID="1291" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="2" createDate="2010-03-31T12:29:35" updateDate="2010-04-06T10:36:12" nodeName="UserNotFound" urlName="usernotfound" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1291,1293">
+			<data alias="Text" />
+			<data alias="Default">Der er sket en fejl. Din profil kunne ikke findes.</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+		<node id="1294" version="06dd5cb7-0aea-4ac1-ad8a-8377a285c584" parentID="1291" level="6" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="3" createDate="2010-03-31T12:31:13" updateDate="2010-04-06T10:36:12" nodeName="UserIsApproved" urlName="userisapproved" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1291,1294">
+			<data alias="Text" />
+			<data alias="Default">Din profil er nu aktiveret og du kan logge ind.</data>
+			<data alias="Help"><![CDATA[]]></data>
+			<data alias="ProtectRename">1</data>
+			<data alias="Hide">0</data>
+		</node>
+	</node>
+	<node id="1299" version="49fc6eb0-312e-4bdb-a1a9-96879ae46cba" parentID="1184" level="5" writerID="0" creatorID="0" nodeType="1062" template="0" sortOrder="12" createDate="2010-03-31T14:42:38" updateDate="2010-04-06T10:36:12" nodeName="PasswordRecovery" urlName="passwordrecovery" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting container" path="-1,1084,1124,1125,1184,1299">
+		<data alias="UpacSettingsHelper"><![CDATA[]]></data>
+		<node id="1320" version="3adcecc5-3308-4065-91d5-ae5cd4dc2492" parentID="1299" level="6" writerID="0" creatorID="0" nodeType="1062" template="0" sortOrder="4" createDate="2010-04-06T10:29:21" updateDate="2010-04-06T10:36:12" nodeName="ViewPasswordIsUpdated" urlName="viewpasswordisupdated" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting container" path="-1,1084,1124,1125,1184,1299,1320">
+			<data alias="UpacSettingsHelper"><![CDATA[]]></data>
+			<node id="1321" version="576f11ed-52b5-4878-814f-6df237475577" parentID="1320" level="7" writerID="0" creatorID="0" nodeType="1256" template="0" sortOrder="1" createDate="2010-04-06T10:29:33" updateDate="2010-04-06T10:36:12" nodeName="PasswordIsUpdated" urlName="passwordisupdated" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text multiline" path="-1,1084,1124,1125,1184,1299,1320,1321">
+				<data alias="Text"><![CDATA[]]></data>
+				<data alias="Default"><![CDATA[Din adgangskode er blevet ændret.]]></data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+		</node>
+		<node id="1303" version="2cd5c9f1-af50-44d3-ae5a-ee2540cfe3c5" parentID="1299" level="6" writerID="0" creatorID="0" nodeType="1062" template="0" sortOrder="8" createDate="2010-03-31T14:50:04" updateDate="2010-04-06T10:36:12" nodeName="ReceiptEmailSendt" urlName="receiptemailsendt" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting container" path="-1,1084,1124,1125,1184,1299,1303">
+			<data alias="UpacSettingsHelper"><![CDATA[]]></data>
+			<node id="1304" version="302d9666-e7f1-4aba-87ef-49c867bd2b4a" parentID="1303" level="7" writerID="0" creatorID="0" nodeType="1256" template="0" sortOrder="1" createDate="2010-03-31T14:51:11" updateDate="2010-04-06T10:36:12" nodeName="Screen" urlName="screen" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text multiline" path="-1,1084,1124,1125,1184,1299,1303,1304">
+				<data alias="Text"><![CDATA[]]></data>
+				<data alias="Default"><![CDATA[Vi har sendt en email til dig med yderligere vejledning.]]></data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1305" version="f29df0d8-592d-4825-91ee-379752a91801" parentID="1303" level="7" writerID="0" creatorID="0" nodeType="1256" template="0" sortOrder="2" createDate="2010-03-31T14:52:00" updateDate="2010-04-06T10:36:12" nodeName="EmailBody" urlName="emailbody" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text multiline" path="-1,1084,1124,1125,1184,1299,1303,1305">
+				<data alias="Text"><![CDATA[]]></data>
+				<data alias="Default">
+					<![CDATA[<p style="font-family: verdana; font-size: 11px;">
+Du har via vores hjemmeside bedt om at få nulstillet dit password.
+<br /><br />
+<a href="$link" style="font-weight: bold;">klik her for at nulstille dit password</a>
+<br />
+<br />
+<em>Hvis ovenstående link ikke virker, kan du prøve at kopier nedenstående link til din browser. Du skal være opmærksom på ikke at lave ekstra mellemrum.<br />
+$link
+</em>
+</p>]]>
+				</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1306" version="66deb4bb-30ee-47ab-8248-503c62d60799" parentID="1303" level="7" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="3" createDate="2010-03-31T14:56:17" updateDate="2010-04-06T10:36:12" nodeName="EmailSubject" urlName="emailsubject" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1299,1303,1306">
+				<data alias="Text" />
+				<data alias="Default">Nulstilling af adgangskode</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+		</node>
+		<node id="1313" version="56317d8f-2a73-4ebf-8a14-f985945d47df" parentID="1299" level="6" writerID="0" creatorID="0" nodeType="1062" template="0" sortOrder="10" createDate="2010-03-31T16:03:44" updateDate="2010-04-06T10:36:12" nodeName="ViewProvideDetails" urlName="viewprovidedetails" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting container" path="-1,1084,1124,1125,1184,1299,1313">
+			<data alias="UpacSettingsHelper"><![CDATA[]]></data>
+			<node id="1310" version="4ab11989-b638-4c5e-9d49-efadbd326c0b" parentID="1313" level="7" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="1" createDate="2010-03-31T15:19:23" updateDate="2010-04-06T10:36:12" nodeName="PasswordRecoveryButtonText" urlName="passwordrecoverybuttontext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1299,1313,1310">
+				<data alias="Text" />
+				<data alias="Default">Send</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1301" version="e8b976e5-00b3-4a9e-8f8d-25e7c0c61540" parentID="1313" level="7" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="2" createDate="2010-03-31T14:46:17" updateDate="2010-04-06T10:36:13" nodeName="EmailLabelText" urlName="emaillabeltext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1299,1313,1301">
+				<data alias="Text" />
+				<data alias="Default">Email</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1300" version="ebff678b-8d58-4483-89f9-2b5ce48f9e66" parentID="1313" level="7" writerID="0" creatorID="0" nodeType="1256" template="0" sortOrder="4" createDate="2010-03-31T14:43:02" updateDate="2010-04-06T11:01:10" nodeName="InstructionText" urlName="instructiontext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text multiline" path="-1,1084,1124,1125,1184,1299,1313,1300">
+				<data alias="Text"><![CDATA[]]></data>
+				<data alias="Default">
+					<![CDATA[<strong>Kan du ikke logge ind? Har du glemt din adgangskode?</strong><br />
+<br />
+Skriv din email adresse nedenunder og vi vil sende dig en email med vejledning om hvordan du nulstiller din adgangskode.]]>
+				</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1302" version="c9bb6619-6fab-434b-97d0-3f77eb6d4923" parentID="1313" level="7" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="5" createDate="2010-03-31T14:46:58" updateDate="2010-04-06T10:36:13" nodeName="EmailRequiredErrorMessage" urlName="emailrequirederrormessage" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1299,1313,1302">
+				<data alias="Text" />
+				<data alias="Default">Du skal udfylde feltet email</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1307" version="f1253073-760b-4fda-8a11-87f1a18b0dc4" parentID="1313" level="7" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="6" createDate="2010-03-31T14:56:57" updateDate="2010-04-06T10:36:13" nodeName="ReceiptEmailNotFound" urlName="receiptemailnotfound" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1299,1313,1307">
+				<data alias="Text" />
+				<data alias="Default">Du kan ikke findes som bruger.</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1308" version="aebad81e-2c39-4536-a7c3-c4626e3a3866" parentID="1313" level="7" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="7" createDate="2010-03-31T14:58:21" updateDate="2010-04-06T10:36:13" nodeName="ReceiptNotApproved" urlName="receiptnotapproved" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1299,1313,1308">
+				<data alias="Text" />
+				<data alias="Default">Din profil er endnu ikke aktiveret.</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1309" version="07ff654e-90f4-4fc1-a7fd-ac1deae04e70" parentID="1313" level="7" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="8" createDate="2010-03-31T14:59:30" updateDate="2010-04-06T10:36:13" nodeName="ReceiptProfileIsLocked" urlName="receiptprofileislocked" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1299,1313,1309">
+				<data alias="Text" />
+				<data alias="Default">Din profil er låst</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+		</node>
+		<node id="1314" version="8ee56245-0499-4ab7-91b4-c87c4ed0eeb4" parentID="1299" level="6" writerID="0" creatorID="0" nodeType="1062" template="0" sortOrder="11" createDate="2010-03-31T16:04:03" updateDate="2010-04-06T10:36:13" nodeName="ViewProvideNewPassword" urlName="viewprovidenewpassword" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting container" path="-1,1084,1124,1125,1184,1299,1314">
+			<data alias="UpacSettingsHelper"><![CDATA[]]></data>
+			<node id="1312" version="20527048-6254-4f8a-beae-a0b180e3aa36" parentID="1314" level="7" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="11" createDate="2010-03-31T15:58:24" updateDate="2010-04-06T10:36:13" nodeName="UrlError" urlName="urlerror" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1299,1314,1312">
+				<data alias="Text" />
+				<data alias="Default">Der er sket en fejl.&lt;br /&gt;Du skal sikre dig at du har fået hele adressen med fra din email klient.</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1315" version="af5195ff-d0a6-4f62-84b8-7f9a7f84c641" parentID="1314" level="7" writerID="0" creatorID="0" nodeType="1256" template="0" sortOrder="12" createDate="2010-03-31T16:17:41" updateDate="2010-04-06T10:36:13" nodeName="InstructionText" urlName="instructiontext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text multiline" path="-1,1084,1124,1125,1184,1299,1314,1315">
+				<data alias="Text"><![CDATA[]]></data>
+				<data alias="Default"><![CDATA[Vælg en ny adgangskode og tryk på nulstil]]></data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+			<node id="1316" version="62ffe478-5eab-493b-ab3f-ef1ae0f999c9" parentID="1314" level="7" writerID="0" creatorID="0" nodeType="1063" template="0" sortOrder="13" createDate="2010-03-31T16:18:35" updateDate="2010-04-06T10:36:13" nodeName="ResetButtonText" urlName="resetbuttontext" writerName="Administrator" creatorName="Administrator" nodeTypeAlias="Configuration - Setting text" path="-1,1084,1124,1125,1184,1299,1314,1316">
+				<data alias="Text" />
+				<data alias="Default">Nulstil</data>
+				<data alias="Help"><![CDATA[]]></data>
+				<data alias="ProtectRename">1</data>
+				<data alias="Hide">0</data>
+			</node>
+		</node>
+	</node>
+</node>

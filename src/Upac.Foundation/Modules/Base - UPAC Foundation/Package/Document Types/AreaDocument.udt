@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+  <Info>
+    <Name>#Base-DocumentTypes-AreaDocument</Name>
+    <Alias>AreaDocument</Alias>
+    <Icon>page_green.png</Icon>
+    <Thumbnail>docWithImage.png</Thumbnail>
+    <Description></Description>
+    <Master />
+    <AllowedTemplates>
+      <Template>Document-Normal</Template>
+      <Template>Document-Wide</Template>
+      <Template>Document-Full-Width</Template>
+    </AllowedTemplates>
+    <DefaultTemplate>Document-Normal</DefaultTemplate>
+  </Info>
+  <Structure>
+    <DocumentType>Document</DocumentType>
+  </Structure>
+  <GenericProperties>
+    <Include src="Base.txt" xpath="/DocumentType/GenericProperties/GenericProperty" />
+	  <GenericProperty>
+		  <Name>#Base-Property-macroContainer</Name>
+		  <Alias>macroContainer</Alias>
+		  <Type>474fcff8-9d2d-11de-abc6-ad7a56d89593</Type>
+		  <Definition>c7f72af9-9302-4e0e-a566-a3ec88e091fc</Definition>
+		  <Tab>Data</Tab>
+		  <Mandatory>False</Mandatory>
+		  <Validation>
+		  </Validation>
+		  <Description><![CDATA[]]></Description>
+	  </GenericProperty>
+  </GenericProperties>
+  <Tabs>
+    <Include src="Base.txt" xpath="/DocumentType/Tabs/Tab" />
+  </Tabs>
+</DocumentType>

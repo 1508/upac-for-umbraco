@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<DictionaryItems>
+		<DictionaryItem Key="PublicationModule">
+			<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[]]></Value>
+			<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[]]></Value>
+			<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[]]></Value>
+			<DictionaryItem Key="PublicationModule-Umbraco">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[]]></Value>
+				
+				<!-- Document types -->
+				<DictionaryItem Key="PublicationModule-DocumentTypes-PublicationYearFolder">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Year folder]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Års mappe]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Year folder]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="PublicationModule-DocumentTypes-PublicationMonthFolder">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Month folder]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Måneds mappe]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Month folder]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="PublicationModule-DocumentTypes-PublicationModule">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Publications module]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Publikations modul]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Publications module]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="PublicationModule-DocumentTypes-PublicationDocument">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Publication]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Publikation]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Publication]]></Value>
+				</DictionaryItem>
+
+				<!-- Properties -->
+				<DictionaryItem Key="PublicationModule-Property-publicationImage">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Publication frontpage image]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Publikation forside billede]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Publication frontpage image]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="PublicationModule-Property-publicationFile">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Publication as file]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Publikation som fil]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Publication as file]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="PublicationModule-Property-publisher">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Publisher]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Forlag]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Publisher]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="PublicationModule-Property-author">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Author]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Forfatter]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Author]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="PublicationModule-Property-isbn">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[ISBN]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[ISBN]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[ISBN]]></Value>
+				</DictionaryItem>
+
+			</DictionaryItem>
+
+			<!-- Website -->
+			<DictionaryItem Key="PublicationModule-download">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Download]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[download]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Download]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="PublicationModule-published">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Published]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Udgivet]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Published as file]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="PublicationModule-publisher">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Publisher]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Forlag]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Publisher]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="PublicationModule-author">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Author]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Forfatter]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Author]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="PublicationModule-isbn">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[ISBN]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[ISBN]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[ISBN]]></Value>
+			</DictionaryItem>
+
+		</DictionaryItem>
+	</DictionaryItems>
+</umbPackage>

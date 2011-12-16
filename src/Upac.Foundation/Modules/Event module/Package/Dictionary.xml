@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<DictionaryItems>
+		<DictionaryItem Key="EventModule">
+			<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[]]></Value>
+			<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[]]></Value>
+			<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[]]></Value>
+			<DictionaryItem Key="EventModule-Umbraco">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[]]></Value>
+
+				<!-- Document types -->
+				<DictionaryItem Key="EventModule-DocumentTypes-EventDocument">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Event]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Event]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Event]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="EventModule-DocumentTypes-EventModule">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Event module]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Event module]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Event module]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="EventModule-DocumentTypes-EventMonthFolder">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Month folder]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Måneds mappe]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Month folder]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="EventModule-DocumentTypes-EventYearFolder">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Year folder]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Års mappe]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Year folder]]></Value>
+				</DictionaryItem>
+
+				<!-- Properties -->
+				<DictionaryItem Key="EventModule-Property-dateFrom">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[From date]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Fra dato]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[From date]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="EventModule-Property-dateTo">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[To date]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Til dato]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[To date]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="EventModule-Property-place">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Adress]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Adresse]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Adress]]></Value>
+				</DictionaryItem>
+				<DictionaryItem Key="EventModule-Property-contact">
+					<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Contact]]></Value>
+					<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Kontakt]]></Value>
+					<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Contact]]></Value>
+				</DictionaryItem>
+
+			</DictionaryItem>
+
+			<!-- Website -->
+			<DictionaryItem Key="EventModule-facts">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Facts]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Fakta]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Facts]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="EventModule-facts-date">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Date and time]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Dato og tid]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Date and time]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="EventModule-facts-place">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Place]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Sted]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Place]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="EventModule-facts-contact">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Contact]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Kontakt]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Contact]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="EventModule-facts-goToArchive">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Go to archive]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Gå til arkiv]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Go to archive]]></Value>
+			</DictionaryItem>
+			<DictionaryItem Key="EventModule-facts-goToUpComming">
+				<Value LanguageId="1" LanguageCultureAlias="en-US"><![CDATA[Go to upcomming events]]></Value>
+				<Value LanguageId="2" LanguageCultureAlias="da-DK"><![CDATA[Gå til kommende events]]></Value>
+				<Value LanguageId="3" LanguageCultureAlias="en-GB"><![CDATA[Go to upcomming events]]></Value>
+			</DictionaryItem>
+
+		</DictionaryItem>
+	</DictionaryItems>
+</umbPackage>

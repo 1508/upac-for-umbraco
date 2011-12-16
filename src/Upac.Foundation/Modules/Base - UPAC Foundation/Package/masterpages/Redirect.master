@@ -1,0 +1,39 @@
+﻿<%@ Import Namespace="Upac.Core.Extensions"%>
+<%@ Import Namespace="umbraco.presentation.nodeFactory"%>
+<%@ Import Namespace="Upac.Core.Data"%>
+<%@ Master Language="C#" MasterPageFile="/umbraco/masterpages/default.master" AutoEventWireup="true" %>
+<script language="C#" runat="server">
+    private void Page_Load(object sender, System.EventArgs e) 
+    {
+        string redirectUrl = string.Empty;
+        
+        Node node = Upac.Core.UpacContext.Current.Node;
+        // Check to see if the node is a redirect node.
+        if (node != null && node.NodeTypeAlias == Upac.Core.Configuration.ConfigurationManager.UpacSettings.DocumentTypes.Redirect)
+        {
+            int umbracoRedirectNodeId = node.GetPropertyValue("umbracoRedirect", -1);
+            if (umbracoRedirectNodeId > -1)
+            {
+                Node redirNode = NodeFactory.GetNodeSafe(umbracoRedirectNodeId);
+                if (redirNode != null && redirNode.Id != node.Id)
+                {
+                    redirectUrl = Upac.Core.LinkManager.GetNodeUrl(node);
+                }
+            }
+            else // check to see if we should do an external link
+            {
+                string externalUrl = node.GetPropertyValue("externalLink", string.Empty);
+                if (externalUrl != string.Empty)
+                {
+                    redirectUrl = externalUrl;
+                }
+            }
+        }
+        
+        if (redirectUrl != string.Empty)
+        {
+            Response.Redirect(redirectUrl, true);
+        }
+    }
+</script>
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">Error! - Could not do a redirect.</asp:Content>

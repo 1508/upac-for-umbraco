@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+	<files />
+	<info>
+		<package>
+			<name>Upac Event Module</name>
+			<version></version>
+			<license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+			<url>http://www.1508.dk</url>
+			<requirements>
+				<major>4</major>
+				<minor>5</minor>
+				<patch>0</patch>
+			</requirements>
+		</package>
+		<author>
+			<name>Christian Palm, 1508 A/S</name>
+			<website>http://www.1508.dk</website>
+		</author>
+		<readme><![CDATA[]]></readme>
+	</info>
+	<Documents>
+		<DocumentSet importMode="root">
+		</DocumentSet>
+	</Documents>
+	<DocumentTypes />
+	<Templates />
+	<Stylesheets />
+	<Macros />
+	<DictionaryItems />
+	<Languages />
+	<Actions>
+		<Action runat="install" alias="allowDocumenttype" documentTypeAlias="EventModule" parentDocumentTypeAlias="ConfigurationDefaultValuesContainer"/>
+		<Action runat="install" alias="allowDocumenttype" documentTypeAlias="EventDocument" parentDocumentTypeAlias="ConfigurationDefaultValuesContainer"/>
+		<Action runat="install" alias="allowDocumenttype" documentTypeAlias="EventModule" parentDocumentTypeAlias="AreaDocument"/>
+		<Action runat="install" undo="false" alias="AddMacroAliasToMacroContainer" macroAliasToAdd="Event-List-From-Seleced-Archive" dataTypeNameToUpdate="Macro Container" />
+		<Action runat="install" undo="false" alias="AddMacroAliasToMacroPicker" macroAliasToAdd="Event-DocumentType-EventModule" dataTypeNameToUpdate="Macro Picker" />
+		<Action runat="install" undo="false" alias="AddDefaultValueDocument">
+			<Document DocumentTypeAlias="EventModule">
+				<Properties>
+					<Property name="mainMacro"><![CDATA[<?UMBRACO_MACRO macroalias="Event-DocumentType-EventModule" />]]></Property>
+				</Properties>
+			</Document>
+		</Action>
+	</Actions>
+	<DataTypes />
+	<control />
+</umbPackage>

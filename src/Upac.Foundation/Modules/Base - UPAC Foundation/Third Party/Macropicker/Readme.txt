@@ -1,0 +1,1 @@
+http://our.umbraco.org/projects/backoffice-extensions/macropicker

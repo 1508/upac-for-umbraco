@@ -1,0 +1,76 @@
+﻿<?xml version="1.0"?>
+<!--
+Targets:
+
+RebuildRelease
+
+
+-->
+<project name="Upac-Foundation" default="">
+
+	<!-- Basic settings -->
+	<property name="MsBuild.Configuration" value="Release" />
+	<property name="nant.settings.currentframework" value="net-3.5" />
+
+	<property name="Solution.Name" value="Upac.Core" />
+	<property name="MsBuild.Configuration" value="Release" />
+
+	<!-- Folders -->
+	<!-- Root dir -->
+	<property name="build.dir" value="${directory::get-current-directory()}" />
+	<property name="release.dir" value="${build.dir}\Releases" />
+	<property name="root.dir" value="${directory::get-parent-directory(build.dir)}" />
+	<property name="source.dir" value="${root.dir}\src" />
+	<property name="lib.dir" value="${source.dir}\Lib" />
+	<property name="upac.core.dir" value="${source.dir}\Upac.Core" />
+
+	<property name="release.upac.core.dir" value="${build.dir}\Releases\Upac.Core" />
+
+	<!-- Apps -->
+	<property name="MsBuild.exe" value="${framework::get-framework-directory('net-3.5')}\msbuild.exe" />
+
+	<target name="RebuildRelease" description="Rebuild and create package" depends="Build">
+		<echo message="Starting process." />
+		<!--
+		<echo message="Folders" />
+		<echo message="root.dir: ${root.dir}" />
+		<echo message="build.dir: ${build.dir}" />
+		<echo message="release.dir: ${release.dir}" />
+		<echo message="source.dir: ${source.dir}" />
+		<echo message="lib.dir: ${lib.dir}" />
+		<echo message="upac.core.dir: ${upac.core.dir}" />
+		<echo message="release.upac.core.dir: ${release.upac.core.dir}" />
+		-->
+		<copy todir="${release.upac.core.dir}">
+			<fileset basedir="${source.dir}\Upac.Core\bin\Release">
+				<include name="Upac.Core.*" />
+			</fileset>
+		</copy>
+		<copy todir="${release.upac.core.dir}/UPAC Dependencies">
+			<fileset basedir="${lib.dir}/NVelocity">
+				<include name="NVelocity.*" />
+			</fileset>
+		</copy>
+		<copy todir="${release.upac.core.dir}/UPAC Dependencies">
+			<fileset basedir="${lib.dir}/log4net">
+				<include name="log4net.*" />
+			</fileset>
+		</copy>
+		
+	</target>
+
+	<target name="Build" description="Build project using MsBuild">
+		<echo message="Starting Build" />
+		<!-- this way we get the newest dll's from Upac.Core into our /bin folder -->
+		<!-- Build the solution -->
+		<exec program="${MsBuild.exe}" failonerror="true" basedir="${source.dir}\Upac.Core">
+			<!-- If a project file is not specified, MSBuild searches the current working directory for a file name extension that ends in "proj" and uses that file  -->
+			<arg value="${upac.core.dir}\Upac.Core.csproj"/>
+			<arg value="/p:Configuration=${MsBuild.Configuration}"></arg>
+			<arg value="/t:Rebuild"></arg>
+			<arg value="/p:OutputPath=bin\Release\" />
+			<!--<arg value="/p:Configuration=BuildScript" />-->
+		</exec>
+	</target>
+	
+</project>

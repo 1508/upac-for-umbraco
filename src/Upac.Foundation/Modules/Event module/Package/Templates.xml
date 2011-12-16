@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <Templates>
+	  <Template>
+		  <Name>Event-DocumentType-EventDocument</Name>
+		  <Alias>Event-DocumentType-EventDocument</Alias>
+		  <Master>Grid-Three-Six-Three</Master>
+		  <Design></Design>
+	  </Template>
+  </Templates>
+</umbPackage>

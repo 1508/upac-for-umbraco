@@ -1,0 +1,10 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/Grid-Three-Six-Three.master" AutoEventWireup="true" %>
+<%@ Register TagPrefix="upac" Namespace="Upac.Core.Webcontrols" Assembly="Upac.Core" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Collumn_Left" runat="server"></asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderDefault" runat="server">
+    <umbraco:Item field="shortIntro" insertTextBefore="&lt;p class=&quot;shortintro&quot;&gt;" insertTextAfter="&lt;/p&gt;" convertLineBreaks="true" runat="server"></umbraco:Item>
+    <umbraco:Item field="body" insertTextBefore="&lt;div class=&quot;body&quot;&gt;" insertTextAfter="&lt;/div&gt;" runat="server"></umbraco:Item>
+    <umbraco:Item field="mainMacro" runat="server"></umbraco:Item>
+    <umbraco:Item field="macroContainer" runat="server"></umbraco:Item>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder_Collumn_Right" runat="server"></asp:Content>

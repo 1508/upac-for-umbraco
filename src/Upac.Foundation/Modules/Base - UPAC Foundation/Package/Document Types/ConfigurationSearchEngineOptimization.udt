@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentType>
+  <Info>
+    <Name>#Base-DocumentTypes-ConfigurationSearchEngineOptimization</Name>
+    <Alias>ConfigurationSearchEngineOptimization</Alias>
+    <Icon>wrench_orange.png</Icon>
+    <Thumbnail>developer.png</Thumbnail>
+    <Description></Description>
+    <AllowedTemplates />
+    <DefaultTemplate />
+  </Info>
+  <Structure />
+  <GenericProperties>
+    <GenericProperty>
+      <Name>#Base-Property-browserTitlePrefix</Name>
+      <Alias>browserTitlePrefix</Alias>
+      <Type>ec15c1e5-9d90-422a-aa52-4f7622c63bea</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Browser title bar</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+    <GenericProperty>
+      <Name>#Base-Property-browserTitleSuffix</Name>
+      <Alias>browserTitleSuffix</Alias>
+      <Type>ec15c1e5-9d90-422a-aa52-4f7622c63bea</Type>
+      <Definition>0cc0eba1-9960-42c9-bf9b-60e150b429ae</Definition>
+      <Tab>Browser title bar</Tab>
+      <Mandatory>False</Mandatory>
+      <Validation></Validation>
+      <Description><![CDATA[]]></Description>
+    </GenericProperty>
+  </GenericProperties>
+  <Tabs>
+    <Tab>
+      <Id>27</Id>
+      <Caption>#Base-Tab-BrowserTitleBar</Caption>
+    </Tab>
+  </Tabs>
+</DocumentType>
